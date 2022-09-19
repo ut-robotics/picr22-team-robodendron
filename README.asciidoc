@@ -14,33 +14,27 @@ and software development so that the whole team members could be introduced to t
 concepts to be used in this project.
 
 === Monday 2022-09-05
-Decide the tasks all together
-*Malcom:* start working on camera to find the ball
-*Leon:* start working on the test robot and get the sizes with the calliper, start thinking about a first launcher
-*Nathan:* soldering of missing parts from the test robot
-*Gautier:* started designing the ramp for the thrower with right ejection angle.
+Decide the tasks all together +
+*Malcom:* start working on camera to find the ball +
+*Leon:* start working on the test robot and get the sizes with the calliper, start thinking about a first launcher +
+*Nathan:* soldering of missing parts from the test robot +
+*Gautier:* started designing the ramp for the thrower with right ejection angle. +
 
 === Thursday 2022-09-08
-*Malcom:* work on the omni wheels, to make them rotate
-*Leon:* build the thrower and get used to fusion
-*Nathan:* finished the soldering, improved some of the connections, tried to make the motors work
-*Gautier:* More tweaking on the thrower ramp
+*Malcom:* work on the omni wheels, to make them rotate +
+*Leon:* build the thrower and get used to fusion +
+*Nathan:* finished the soldering, improved some of the connections, tried to make the motors work +
+*Gautier:* More tweaking on the thrower ramp +
 
 
 === Monday 2022-09-12
-*Malcom:* work on the mapping of the omniwheels to give a direction, and start the programation of the motion
-*Leon:* finish the launcher
-*Nathan:* the motors worked it was due to some cabling error
-*Gautier:* final work on the ramp design with real test robot CAD
+*Malcom:* work on the mapping of the omniwheels to give a direction, and start the programation of the motion +
+*Leon:* finish the launcher +
+*Nathan:* the motors worked it was due to some cabling error +
+*Gautier:* final work on the ramp design with real test robot CAD +
 
 === Thursday 2022-09-15
-*Malcom:* 
-*Leon:* 
-*Nathan:* 
-*Gautier:* 
+...
 
 === Monday 2022-09-19
-*Malcom:* 
-*Leon:*
-*Nathan:* 
-*Gautier:*
+...
