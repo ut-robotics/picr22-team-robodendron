@@ -15,23 +15,23 @@ concepts to be used in this project.
 
 === Monday 2022-09-05
 Decide the tasks all together +
-*Malcom:* start working on camera to find the ball +
-*Leon:* start working on the test robot and get the sizes with the calliper, start thinking about a first launcher +
-*Nathan:* soldering of missing parts from the test robot +
-*Gautier:* started designing the ramp for the thrower with right ejection angle. +
+*Malcom:* start working on camera to find the ball (2h)+
+*Leon:* start working on the test robot and get the sizes with the calliper, start thinking about a first launcher (2h)+
+*Nathan:* soldering of missing parts from the test robot (2h) +
+*Gautier:* started designing the ramp for the thrower with right ejection angle. (2h)+
 
 === Thursday 2022-09-08
-*Malcom:* work on the omni wheels, to make them rotate +
-*Leon:* build the thrower and get used to fusion +
-*Nathan:* finished the soldering, improved some of the connections, tried to make the motors work +
-*Gautier:* More tweaking on the thrower ramp +
+*Malcom:* work on the omni wheels, to make them rotate (2h)+
+*Leon:* build the thrower and get used to fusion (2h)+
+*Nathan:* finished the soldering, improved some of the connections, tried to make the motors work(2h) +
+*Gautier:* More tweaking on the thrower ramp (2h)+
 
 
 === Monday 2022-09-12
-*Malcom:* work on the mapping of the omniwheels to give a direction, and start the programation of the motion +
-*Leon:* finish the launcher +
-*Nathan:* the motors worked it was due to some cabling error +
-*Gautier:* final work on the ramp design with real test robot CAD +
+*Malcom:* work on the mapping of the omniwheels to give a direction, and start the programation of the motion (2h) +
+*Leon:* finish the launcher (2h) +
+*Nathan:* the motors worked it was due to some cabling error (2h) +
+*Gautier:* final work on the ramp design with real test robot CAD (2h)+
 
 === Thursday 2022-09-15
 ...
