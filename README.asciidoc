@@ -37,4 +37,33 @@ Decide the tasks all together +
 ...
 
 === Monday 2022-09-19
-...
+Progress presentation.
+
+== Thursday 2022-09-22
+*Malcom:*
+*Leon:* Design of a new fixture component to attach the new omniwheels to the
+motor axles. This new design should be much easier to attach to the wheel and 
+it should grip the motor axles much better. (2h) +
+*Nathan:* Cable management on the test robot. (2h) +
+*Gautier:* Design of the new omniwheels (one single piece should be enough as
+opposed to the two parts taking the bearings and their axles in "sandwich"). (2h) +
+
+== Monday 2022-09-26
+*Malcom:* Writing a code to spin the robot and stop when the ball is detected (2h) +
+*Leon:*  Improvements on the thrower's structure with standoffs. The whole assembly should be much more rigid. (3h) +
+*Nathan:*  Fixed the motor controllers to the frame (1h); started learning about PCB design (1h30) +
+*Gautier:* Print of wheel prototypes to figure out the best tolerance settings for press fitting the roller axles. (3h) +
+
+== Thursday 2022-09-29
+*Malcom:* Writing a code that not only looks for the ball by spinning, but also moves the robot
+towards the ball with a speed proportional to the distance to the target. (2h) +
+*Leon:* Improvement ont the thrower (tolerances, holes...) (3h) +
+*Nathan:* Continued learning about PCBs and searched some components (2h30) +
+*Gautier:* Design, 3D printing and installation of the new omniwheel on the test robot.
+Some heated inserts are installed to provide better fixture. Two designs for wheel hubs (fixture to the motor shafts) were
+also attempted. A new single-piece design was born from issues with two-part hub/wheel. (6h30) +
+
+== Monday 2022-10-3
+Progress presentation. +
+
+*Gautier* Print of the latest omniwheel design integrating both the wheel and the hub in one piece. (2h) +
