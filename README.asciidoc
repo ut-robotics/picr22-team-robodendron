@@ -112,3 +112,14 @@ Progress presentation+
 
 *Léon:* correct the problems of the reviewed design, and discussion on the bad mechanical designs (3h) +
 *Gautier:* starting designing the chassis's base plate (2,5h) +
+
+== Thursday 2022-11-3
+
+== Monday 2022-11-7
+
+*Gautier:* Design of the new robot's chassis (Central Unit mount, camera mount, battery mount...) (3.5h);
+fixing the test robot (electronics, cable management...) for evaluation (3h) +
+*Nathan:* Fixing the robot (electronics, cable management...) for evaluation (3h) +
+*Malcom:* TBA +
+*Léon:* TBA +
+
