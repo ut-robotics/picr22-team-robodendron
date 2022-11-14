@@ -114,6 +114,7 @@ Progress presentation+
 *Gautier:* starting designing the chassis's base plate (2,5h) +
 
 == Thursday 2022-11-3
+*Léon:* work on the redesign of the thrower (3h) +
 
 == Monday 2022-11-7
 
@@ -121,5 +122,17 @@ Progress presentation+
 fixing the test robot (electronics, cable management...) for evaluation (3h) +
 *Nathan:* Fixing the robot (electronics, cable management...) for evaluation (3h) +
 *Malcom:* TBA +
-*Léon:* TBA +
+*Léon:* work on the redesign of the thrower and start to standardise all the CAD files I made (4h) +
 
+== Wednesday 2022-11-9
+*Gautier:* More work on the new chassis' battery and alarm mounts + XT60 sockets (3h) +
+
+== Thursday 2022-11-10
+Test competition +
+
+*Léon:* Standardization of CAD parts (2h) +
+*Gautier:* Prep work and last minute fixes on test robot for test competition (3h)+
+*Malcom:* Software tweaks and preparation of the robot for test competition (3h) +
+
+== Monday 2022-11-14
+Progress presentation +
