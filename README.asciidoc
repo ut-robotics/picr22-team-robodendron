@@ -115,17 +115,21 @@ Progress presentation+
 
 == Thursday 2022-11-3
 *Léon:* work on the redesign of the thrower (3h) +
+*Nathan:* Made the voltage regulator work, created some new cables (2h) +
+*Malcom:* connecting the robot back after the problem encountered. (2h) +
+*Gautier:* work on chassis + help on the test robot (3h) +
 
 == Monday 2022-11-7
 
 *Gautier:* Design of the new robot's chassis (Central Unit mount, camera mount, battery mount...) (3.5h);
-fixing the test robot (electronics, cable management...) for evaluation (3h) +
+fixing the test robot (electronics, cable management...) for evaluation (4h) +
 *Nathan:* Fixing the robot (electronics, cable management...) for evaluation (3h) +
-*Malcom:* TBA +
+*Malcom:* working on the code to align the robot with the ball and the target basket (3h) +
 *Léon:* work on the redesign of the thrower and start to standardise all the CAD files I made (4h) +
 
 == Wednesday 2022-11-9
 *Gautier:* More work on the new chassis' battery and alarm mounts + XT60 sockets (3h) +
+*Malcom:* Setting the thrower to aim at the basket(3h) +
 
 == Thursday 2022-11-10
 Test competition +
@@ -133,6 +137,7 @@ Test competition +
 *Léon:* Standardization of CAD parts (2h) +
 *Gautier:* Prep work and last minute fixes on test robot for test competition (3h)+
 *Malcom:* Software tweaks and preparation of the robot for test competition (3h) +
+*Nathan:* Worked on Altium (3h) +
 
 == Monday 2022-11-14
 Progress presentation +
