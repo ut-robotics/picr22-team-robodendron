@@ -141,3 +141,36 @@ Test competition +
 
 == Monday 2022-11-14
 Progress presentation +
+
+== Tuesday 2022-11-15
+*Gautier:* work on the chassis (side walls, camera mount improvements...) (4h) +
+
+== Thursday 2022-11-17
+
+*Nathan:* Finished all pieces (2h) +
+*Léon:* redo all the badly made parts of the thrower (4h) +
+*Malcom:*
+*Gautier:* Absent +
+
+== Monday 2022-11-21
+
+*Nathan:* Finished schematics and tried to convert to pcb (3h) +
+*Léon:* Finishing the renew of the thrower, 
+improve the elements according to the feedback of the past presentation 
+and build the system for the ball blocking system (4h) +
+*Malcom:*
+*Gautier:* Work on the chassis (1h) and review of the code with Malcom (2h) +
+
+== Thursday 24-11-24
+Test Competition 2 : The robot wasn't ready to receive referee commands so we bailed +
+*Nathan:* Solved some problems (2h) +
+
+
+== Saturday 2022-11-26
+
+*Léon:* correct the small problems given in the review, and find solutions for the bigger ones. (2h) +
+
+== Monday 2022-11-28
+Progress presentation +
+
+*Gautier:* Fixed the issues flagged after review. Improved the chassis (5h) +
