@@ -174,3 +174,28 @@ Test Competition 2 : The robot wasn't ready to receive referee commands so we ba
 Progress presentation +
 
 *Gautier:* Fixed the issues flagged after review. Improved the chassis (5h) +
+
+== Thursday 2022-12-01
+*Léon:* work on details of the CAD to get approval for milling, and start manufacturing on fusion(4h) +
+*Malcom:* smooth the movement of the robot (4h) +
+*Nathan:* finished schematics (3h) +
+*Gautier:* XBOX controller support code (4h) +
+
+== Monday 2022-12-05
+*Léon:* change the whole assembly into a manufacturing model for the milling machine (3h) +
+*Malcom:*improve the estimation of the distance (3h) +
+*Nathan:* worked on pcb (4h) +
+*Gautier:* Improvement of the distance estimation and thrower speed calculation + 3D printing chassis parts (3h)+
+
+== Thursday 2022-12-08
+*Léon:* Work on thrower accuracy, Milling and clean the components (9h) +
+*Malcom:* get equation of the speed for the thrower (3h)+
+*Nathan:*  tried to finish PCB (4h) +
+*Gautier:* experimenting with thrower speed equation, implementation of depth sensing (3h) +
+
+== Monday 2022-12-12
+*Léon:* Assemble the components, make the threadings, print missing components (6h) +
+*Nathan:* Assembly of the new robot (6h) +
+*Gautier:* Assembly of the new robot (6h) +
+*Malcom:* Assembly of the new robot (6h) +
+
