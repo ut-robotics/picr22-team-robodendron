@@ -9,294 +9,258 @@ import json
 import pandas as pd
 import numpy as np
 import math
-from realsense_depth import *
+import sys
+from enum import Enum
 
-exitFlag = 0
-global speedz
-global speedx
-global state
-state = 'find_ball'
+class states(Enum):
+        find_ball = 1
+        go_ball = 2
+        align_basket = 3
+        shoot = 4
+        
+class robot():
 
-speed_df = pd.read_csv('speed_magenta.csv')
+    def __init__(self):
+        robot.speedz = None
+        robot.speedx = None
+        robot.motion_sim3 = motion.OmniMotionRobot()
+        robot.state = states.find_ball
+        robot.oponent_basket = None
+        robot.target_basket = None
 
 
 
-def speed_thrower(dist):
+    class controller(threading.Thread):
     
-    #speed = min(int(0.316*dist + 450),1900)
+        def __init__(self, threadID, name,processor):
+            
+            threading.Thread.__init__(self)
+            self.threadID = threadID
+            self.name = name
+            self.processor = processor
 
-    speed = min(int(0.330*dist + 415),1900)
+        def run(self):
+            print("Starting " + self.name)
 
-    """
-    if dist <= 1500:
-        speed = int(0.316*dist + 450)
-   
-    elif dist > 1500 and dist < 2300:
-        speed = int(0.316*dist + 450)
+        def control_on(self):
+            self.processedData = self.processor.process_frame(aligned_depth=False)
+            largest = max(self.processedData.balls , key = lambda ball: ball.size, default=None)
+            if largest:
+                if robot.state == states.find_ball:
+                    robot.state = states.go_ball
+                #cv2.circle(self.processedData.debug_frame,(largest.x, largest.y), 20, (255, 0, 255), -1)
+                if self.name == 'z':
+                    robot.speedz= (self.processedData.debug_frame.shape[1]/2) - largest.x
+                    robot.speedz = robot.motion_sim3.speed_limitation(robot.speedz,'z')
 
-    elif dist >= 2300:
-       speed = int(0.316*dist + 450)
-    """
-    return speed
+                elif self.name == 'x':
+                    robot.speedx = (2*self.processedData.debug_frame.shape[0]/3 - largest.y if 2*self.processedData.debug_frame.shape[0]/3 - largest.y > 0 else 0)
+                    robot.speedx = robot.motion_sim3.speed_limitation(robot.speedx,'x')
 
-def speed_limitation(speed,direction):
-    if direction == 'x':
-        if (speed / 10) > 10:
-            speed = 10
-        else :    
-            speed = speed / 10
+                    speedy = 0
+                    
+                    try:
+                        print('robot.speedz: ',robot.speedz)
+                        print('robot.speedx: ', robot.speedx)
+                        if robot.state == states.go_ball:
+                            if robot.speedx < 0.02: 
+                                robot.speedx = 0
+                                robot.speedz = 0
+                                robot.state = states.align_basket
+                                #print(robot.state)
+                        
+                            robot.motion_sim3.move(robot.speedx, speedy, robot.speedz,100)
 
-    elif direction == 'z':
-        if (speed / 50) > 3:
-            speed = 3  
-        elif (speed / 50) < -3 :
-            speed = -3
-        else :
-            speed = speed / 50
-    elif direction == 'y':
-        if (speed / 50) > 4:
-            speed = 4
-        elif (speed / 50) < -4:
-            speed = -4
-        else:
-            speed = speed / 50
+                    except:
+                        print('except')
+                        robot.motion_sim3.move(0, 0, 0,100)
+                        robot.state = states.find_ball
 
-    return speed
-
-class controller(threading.Thread):
-   
-    def __init__(self, threadID, name,processor):
-        
-        threading.Thread.__init__(self)
-        self.threadID = threadID
-        self.name = name
-        self.processor = processor
-
-    def run(self):
-        print("Starting " + self.name)
-
-    def control_on(self):
-        global speedz
-        global speedx
-        global motion_sim3 
-        global state
-        self.processedData = self.processor.process_frame(aligned_depth=False)
-        largest = max(self.processedData.balls , key = lambda ball: ball.size, default=None)
-        if largest:
-            if state == 'find_ball':
-                state = 'go_ball'
-            #cv2.circle(self.processedData.debug_frame,(largest.x, largest.y), 20, (255, 0, 255), -1)
-            if self.name == 'z':
-                speedz= (self.processedData.debug_frame.shape[1]/2) - largest.x 
-                speedz = speed_limitation(speedz,'z')
-
-            elif self.name == 'x':
-                speedx = (2*self.processedData.debug_frame.shape[0]/3 - largest.y if 2*self.processedData.debug_frame.shape[0]/3 - largest.y > 0 else 0)
-                speedx = speed_limitation(speedx,'x')
-
-                speedy = 0
-                
-                try:
-                    print('speedz: ',speedz)
-                    print('speedx: ', speedx)
-                    if state == 'go_ball':
-                        if speedx < 0.02: 
-                            speedx = 0
-                            speedz = 0
-                            state = 'align_basket'
-                            #print(state)
-                      
-                        motion_sim3.move(speedx, speedy, speedz,100)
-
-                except:
-                    print('except')
-                    motion_sim3.move(0, 0, 0,100)
-                    state = 'find_ball'
-
-        else : 
-            state = 'find_ball'
+            else : 
+                robot.state = states.find_ball
 
 
-class Scanning_ball(threading.Thread):
+    class Scanning_ball(threading.Thread):
 
-    def __init__(self,name,processor):
-        threading.Thread.__init__(self)
-        self.name = name
-        self.stop = False
-        self.processor = processor
-        self.count = 0
-        self.basket_a = None
+        def __init__(self,name,processor):
+            threading.Thread.__init__(self)
+            self.name = name
+            self.stop = False
+            self.processor = processor
+            self.count = 0
+            self.basket_a = None
 
-    def run(self):
-        print("Starting " + self.name)
+        def run(self):
+            print("Starting " + self.name)
 
-    def scan_ball(self):
-        global state 
-        global oponent_basket
-        global target_basket
-        processedData = self.processor.process_frame(aligned_depth=False)
-        
-        if target_basket == 'blue':
-            direction = 1
-        else:
-            direction = -1
-        
-        if state == 'find_ball':
-            motion_sim3.move(0, 0, direction * 3,100)
-            # time.sleep(0.2)
-            # motion_sim3.move(0, 0, 0,100)
-            # time.sleep(0.2)
-            self.count+=1
-
-                # print(self.count)
-                # if oponent_basket == 'blue':
-                #     basket_ = processedData.basket_b
-                # else:
-                #     basket_ = processedData.basket_m
-
-                # try:    
-                #     print(basket_)
-                #     if bakset_.exists :
-                #         print('go to basket')
-                #         motion_sim3.move(3, 0, basket_.x/100,100)
-                #         time.sleep(0.6)
-                #         self.count = 0
-                #     else: 
-                #         motion_sim3.move_turn()
-                #         time.sleep(0.2)
-                #         motion_sim3.move(0, 0, 0,100)
-                #         time.sleep(0.6)
-                # except: 
-                #     motion_sim3.move_turn()
-                #     time.sleep(0.2)
-                #     motion_sim3.move(0, 0, 0,100)
-                #     time.sleep(0.6)
-
-class referee_Thread(threading.Thread):
-
-    def __init__(self,name):
-        threading.Thread.__init__(self)
-        self.rf_command = referee_command.referee_command()
-        self.name = name
-        self.interupt = True
-        self.stop = False
-
-    def run(self):
-        global target_basket
-        global oponent_basket
-        global state 
-        print("Starting " + self.name)
-        try:
-            self.rf_command.connect()
-        except:
-            print("can not connect to server")
-            self.interupt = True
-        
-        while True:
-            msg = json.loads(self.rf_command.listen())
-            if msg.get("signal") == "stop":
-                self.interupt = True
-                state = 'find_ball'
-                print(msg.get("signal"))
-
+        def scan_ball(self):
+         
+            processedData = self.processor.process_frame(aligned_depth=False)
+            
+            if robot.target_basket == 'blue':
+                direction = 1
             else:
-                for robot in range(len(msg.get("targets"))):
-                    if msg.get("targets")[robot] == "robodendron":
-                        target_basket = msg.get("baskets")[robot]
-                        if target_basket == 'blue':
-                            oponent_basket = 'magenta'
-                        else:
-                            oponent_basket = "blue"
+                direction = -1
+            
+            if robot.state == states.find_ball:
+                robot.motion_sim3.move(0, 0, direction * 3,100)
+                # time.sleep(0.2)
+                # robot.motion_sim3.move(0, 0, 0,100)
+                # time.sleep(0.2)
+                self.count+=1
 
-                        print(msg.get("signal"),"bakset target : ",target_basket)
+                    # print(self.count)
+                    # if robot.oponent_basket == 'blue':
+                    #     basket_ = processedData.basket_b
+                    # else:
+                    #     basket_ = processedData.basket_m
+
+                    # try:    
+                    #     print(basket_)
+                    #     if bakset_.exists :
+                    #         print('go to basket')
+                    #         robot.motion_sim3.move(3, 0, basket_.x/100,100)
+                    #         time.sleep(0.6)
+                    #         self.count = 0
+                    #     else: 
+                    #         robot.motion_sim3.move_turn()
+                    #         time.sleep(0.2)
+                    #         robot.motion_sim3.move(0, 0, 0,100)
+                    #         time.sleep(0.6)
+                    # except: 
+                    #     robot.motion_sim3.move_turn()
+                    #     time.sleep(0.2)
+                    #     robot.motion_sim3.move(0, 0, 0,100)
+                    #     time.sleep(0.6)
+
+    class referee_Thread(threading.Thread):
+
+        def __init__(self,name):
+            threading.Thread.__init__(self)
+            self.rf_command = referee_command.referee_command()
+            self.name = name
+            self.interupt = True
+            self.stop = False
+
+        def run(self):
+            print("Starting " + self.name)
+            try:
+                self.rf_command.connect()
+            except:
+                print("can not connect to server")
+                self.interupt = True
+            
+            while True:
+
+                msg = json.loads(self.rf_command.listen())
+                print(msg)
+                try :
+                    index_robot = msg.get("targets").index("robodendron") 
+                except:
+                    break
+                if msg.get("targets")[index_robot] == "robodendron":
+                    if msg.get("signal") == "stop":
+                        self.interupt = True
+                        robot.state = states.find_ball
+                        print(msg.get("signal"))
+
+                    else:
+                        robot.target_basket = msg.get("baskets")[index_robot]
+                        if robot.target_basket == 'blue':
+                            robot.oponent_basket = 'magenta'
+                        else:
+                            robot.oponent_basket = "blue"
+
+                        print(msg.get("signal"),"bakset target : ",robot.target_basket)
                         self.interupt = False
 
 
-class align_control(threading.Thread):
-   
-    def __init__(self, threadID, name,processor):
-        
-        threading.Thread.__init__(self)
-        self.threadID = threadID
-        self.name = name
-        self.processor = processor
+    class align_control(threading.Thread):
     
-    def run(self):
-        print("Starting " + self.name)
-    
-    
-    def throw(self, depth_frame):
-        distance = depth_frame[self.basket_.y, self.basket_.x]
-        print("------------------------------------")
-        print(distance)
-        print("------------------------------------")
-        time.sleep(0.2)
-        motion_sim3.thrower_control(600)
-        time.sleep(0.2)
-        print('dist basket',self.basket_.y)
-        thr_speed = speed_thrower(distance)
-        print('speed',thr_speed)
-        motion_sim3.move(6,0,0,thr_speed) 
-        time.sleep(1)
-        motion_sim3.thrower_control(300)
-
-
-    def align_on(self):
-        global state
-        processedData = self.processor.process_frame(aligned_depth=False)
-        if state == 'align_basket':
-            largest = max(processedData.balls , key = lambda ball: ball.size, default=None)
-            if target_basket == 'blue':
-                self.basket_ = processedData.basket_b
-            else:
-                self.basket_ = processedData.basket_m
+        def __init__(self, threadID, name,processor):
             
-            if largest:
-                #print(abs(self.basket_.x))
-    
-                speedz = (processedData.debug_frame.shape[1]/2) - largest.x 
-                speedx = (2*processedData.debug_frame.shape[0]/3 - largest.y if 2*processedData.debug_frame.shape[0]/3 - largest.y > 0 else 0)
-                speedy = largest.x  - self.basket_.x
+            threading.Thread.__init__(self)
+            self.threadID = threadID
+            self.name = name
+            self.processor = processor
+        
+        def run(self):
+            print("Starting " + self.name)
 
-                speedx = speed_limitation(speedx,'x')
-                speedz = speed_limitation(speedz,'z')
-                speedy = speed_limitation(speedy,'y')
+        def speed_thrower(self,dist):
+            speed = min(int(0.230*dist + 445),1900)
+            return speed
+        
+        
+        def throw(self, depth_frame):
+            distance = depth_frame[self.basket_.y, self.basket_.x]
+            print("------------------------------------")
+            print(distance)
+            print("------------------------------------")
+            time.sleep(0.2)
+            robot.motion_sim3.thrower_control(600)
+            time.sleep(0.2)
+            print('dist basket',self.basket_.y)
+            thr_speed = self.speed_thrower(distance)
+            print('speed',thr_speed)
+            robot.motion_sim3.move(6,-0.15,0,thr_speed) 
+            time.sleep(1)
+            robot.motion_sim3.thrower_control(300)
+
+
+        def align_on(self):
+            processedData = self.processor.process_frame(aligned_depth=False)
+            if robot.state == states.align_basket:
+                largest = max(processedData.balls , key = lambda ball: ball.size, default=None)
+                if robot.target_basket == 'blue':
+                    self.basket_ = processedData.basket_b
+                else:
+                    self.basket_ = processedData.basket_m
                 
-                print('aligning.....',abs(speedy))
+                if largest:
+                    #print(abs(self.basket_.x))
+        
+                    robot.speedz = (processedData.debug_frame.shape[1]/2) - largest.x 
+                    robot.speedx = (2*processedData.debug_frame.shape[0]/3 - largest.y if 2*processedData.debug_frame.shape[0]/3 - largest.y > 0 else 0)
+                    speedy = largest.x  - self.basket_.x
 
-                if abs(speedy) < 0.10:
-                    speedz =  0
-                    speedx =  0
+                    robot.speedx = robot.motion_sim3.speed_limitation(robot.speedx,'x')
+                    speedy = robot.motion_sim3.speed_limitation(speedy,'y')
+                    robot.speedz = robot.motion_sim3.speed_limitation(robot.speedz,'z')
+                    
+                    print('aligning.....',abs(speedy))
 
-                    state = 'shoot'
+                    if abs(largest.x  - self.basket_.x) < 3:
+                        robot.speedz =  0
+                        robot.speedx =  0
 
-                
-                motion_sim3.move(speedx, speedy ,speedz,100)
+                        robot.state = states.shoot
 
-            # else:
-            #     state = 'find_ball'
+                    
+                    robot.motion_sim3.move(robot.speedx, speedy ,robot.speedz,100)
 
-        elif state == 'shoot':
-            self.throw(processedData.depth_frame)
-            state = 'find_ball'
+                # else:
+                #     robot.state = 'find_ball'
+
+            elif robot.state == states.shoot:
+                self.throw(processedData.depth_frame)
+                robot.state = states.find_ball
 
 
 
     
 
-def main_loop():
-    global speedz
-    global speedx
-    global motion_sim3 
-    global state 
-    global target_basket
+def main_loop(method_controller=True):
 
+    robodendron_robot = robot()
 
     debug = True
     
+    if method_controller == False:
+        sys.exit()
     #motion_sim = motion.TurtleRobot()
     #motion_sim2 = motion.TurtleOmniRobot()
-    motion_sim3 = motion.OmniMotionRobot()
+    robodendron_robot.motion_sim3 = motion.OmniMotionRobot()
     
     #camera instance for normal web cameras
     #cam = camera.OpenCVCamera(id = 2)
@@ -308,7 +272,7 @@ def main_loop():
     processor.start()
     #motion_sim.open()
     #motion_sim2.open()
-    motion_sim3.open()
+    robodendron_robot.motion_sim3.open()
 
     start = time.time()
     fps = 0
@@ -316,22 +280,22 @@ def main_loop():
     frame_cnt = 0
 
     processedData = processor.process_frame(aligned_depth=False)
-    referee_thread = referee_Thread("referee_thread")
+    referee_thread = robodendron_robot.referee_Thread("referee_thread")
     referee_thread.start()
-    thread1 = controller(1, "z",processor)
-    thread2 = controller(2, "x", processor)
-    align_control1 = align_control(1,"align_basket_controller",processor)
-    scanning_ball = Scanning_ball('scan_ball',processor)
+    thread1 = robodendron_robot.controller(1, "z",processor)
+    thread2 = robodendron_robot.controller(2, "x", processor)
+    align_control1 = robodendron_robot.align_control(1,"align_basket_controller",processor)
+    scanning_ball = robodendron_robot.Scanning_ball('scan_ball',processor)
 
     thread1.start()
     thread2.start()
     align_control1.start()
     scanning_ball.start()
-    motion_sim3.move(0, 0, 0,100)
+    robodendron_robot.motion_sim3.move(0, 0, 0,100)
 
     try:
         while True:
-            state = 'find_ball'
+            state = states.find_ball
             while not referee_thread.interupt:
                 print("state == ",state)
                 
@@ -364,10 +328,10 @@ def main_loop():
                     if k == ord('q'):
                         break
             
-            motion_sim3.stop_robot()
+            robodendron_robot.motion_sim3.stop_robot()
 
     except KeyboardInterrupt:
-        motion_sim3.stop_robot()
+        robodendron_robot.motion_sim3.stop_robot()
         print("closing....")
         
 
@@ -376,6 +340,7 @@ def main_loop():
         processor.stop()
         #motion_sim.close()
         #motion_sim2.close()
-        motion_sim3.close()
+        robodendron_robot.motion_sim3.close()
 
-main_loop()
+if __name__ == "__main__":
+    main_loop()

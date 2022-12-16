@@ -22,11 +22,19 @@ Is the main method responsible for providing processed frame data.
 ### motion.py
 Contains a IRobotMotion interface that descibes method required for moving the robot. Also contains an example implementation (TurtleRobot) that visualizes motion using turtle tools in python.
 
-### main.py
-A example file containing usecases for the aforementioned modules.
 
 ### config_colors.py
 Utility to configure colors. Check log for detailed instructions.
+
+### referee_command.py
+Script that connects to the referee server to start and stop the robot's sequence.
+
+### controller.py
+Script that enables Gamepad support to control the robot manually. Useful for debuging and throw speed
+measurements.
+
+### follow_ball_depth.py
+Main script that drives the robot. This is where we track balls, go towards them and initiate throws. This final version relies on the camera's depth sensor, therefore its name.
 
 ## How to use
 
@@ -43,9 +51,9 @@ touch colors/colors.pkl
 python3.9 config_colors.py
 ```
 
-Running an example:
+Starting the robot's main sequence (requires to setup the referee server):
 ```
-python3.9 main.py
+python3.9 follow_ball_depth.py
 ```
 
 If you encounter dependency errors, resolve them with pip3.9

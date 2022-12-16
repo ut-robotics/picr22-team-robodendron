@@ -1,13 +1,13 @@
-#import turtle
 import math
 import numpy as np
 import time
 import turtle
-import tkinter as tk
-import serial
+import tkinter as t
 import struct
 import time
-
+from typing import Optional
+import serial
+from serial.tools import list_ports
 class IRobotMotion:
     def open(self):
         pass
@@ -16,13 +16,33 @@ class IRobotMotion:
     def move(self, x_speed, y_speed, rot_speed):
         pass
 
+class SerialPortNotFound(Exception):
+    pass
+
+STM_32_HWID = "USB VID:PID=0483:5740"
 
 class OmniMotionRobot(IRobotMotion):
     def __init__(self):
         # Wheel angles
         self.motor_config = [0, 120, 240]
-        self.port = None
-    
+
+        serial_port: Optional[str] = None
+        ports = list_ports.comports()
+        devices = {}
+
+        for port, _, hwid in sorted(ports):
+            devices[hwid] = port
+        
+        for hwid in devices.keys():
+            if STM_32_HWID in hwid:
+                serial_port = devices[hwid]
+                break
+        
+        if serial_port is None:
+            raise SerialPortNotFound("Serial port not found")
+
+        self.port = serial.Serial(serial_port, 115200)
+            
     
     def open(self):
 
@@ -57,19 +77,10 @@ class OmniMotionRobot(IRobotMotion):
             wheelSpeedToMainboardUnits = gearboxReductionRatio * encoderEdgesPerMotorRevolution / (2 * math.pi * wheelRadius * pidControlFrequency)
             wheelAngularSpeedMainboardUnits = wheelLinearVelocity * wheelSpeedToMainboardUnits
             speeds[i] = wheelAngularSpeedMainboardUnits
-            #print(speeds[i])
             i+=1
         thrower_speed=thrower_speed
-        # if(speeds[0] > 10): speeds[0] = 10
-        # if(speeds[1] > 10): speeds[1] = 10
-        # if(speeds[2] > 10): speeds[2] = 10
-        
-        # speeds[0] = 10
-        # speeds[1] = 10
-        # speeds[2] = 10
-        #data = struct.pack('<hhhHBH', 20, 0, 0, thrower_speed, disable_failsafe, 0xAAAA)
+
         data = struct.pack('<hhhHBH', int(speeds[0]), int(speeds[1]),  int(speeds[2]), thrower_speed, disable_failsafe, 0xAAAA)
-        #print(speeds)
         self.port.write(data)
         
     def thrower_control(self,thrower_speed):
@@ -77,33 +88,33 @@ class OmniMotionRobot(IRobotMotion):
         speeds = [0, 0, 0]
         data = struct.pack('<hhhHBH', int(speeds[0]), int(speeds[1]),  int(speeds[2]), thrower_speed, disable_failsafe, 0xAAAA)
         self.port.write(data)
-        
 
-    def move_straight(self):
-        speed_x = 3  
-        speed_y = 0
-        speed_z = 0
-        self.move(speed_x,speed_y,speed_z)
-
-        return 0 
-    
-    def move_turn(self):
-        speed_x = 0  
-        speed_y = 0
-        speed_z = 10
-        self.move(speed_x,speed_y,speed_z,100)
-        return 0 
-
-    def move_circle(self):
-        speedz = 0
-        speedy = 0
-
-        self.move(speedx, speedy, speedz)
-        print("----------------",speedx,speedz)
-    
-        speedx = 0
     def stop_robot(self):
-        self.move(0,0,0)
+        self.move(0,0,0,0)
+    
+    def speed_limitation(self, speed,direction):
+        if direction == 'x':
+            if (speed / 10) > 10:
+                speed = 10
+            else :    
+                speed = speed / 10
+
+        elif direction == 'z':
+            if (speed / 50) > 3:
+                speed = 3  
+            elif (speed / 50) < -3 :
+                speed = -3
+            else :
+                speed = speed / 50
+        elif direction == 'y':
+            if (speed / 50) > 4:
+                speed = 4
+            elif (speed / 50) < -4:
+                speed = -4
+            else:
+                speed = speed / 50
+
+        return speed
 
 
 if __name__ == "__main__":
@@ -112,7 +123,7 @@ if __name__ == "__main__":
         speed = 1000
         bot = OmniMotionRobot()
         bot.open()
-        bot.move(0,0,1,100)
+        bot.move(0,-1,0,100)
         # bot.thrower_control(300)
         # time.sleep(0.5)
         # bot.thrower_control(speed)
