@@ -24,6 +24,7 @@ class robot():
         robot.speedz = None
         robot.speedx = None
         robot.motion_sim3 = motion.OmniMotionRobot()
+        robot.motion_sim3.open()
         robot.state = states.find_ball
         robot.oponent_basket = None
         robot.target_basket = None
@@ -48,7 +49,6 @@ class robot():
             if largest:
                 if robot.state == states.find_ball:
                     robot.state = states.go_ball
-                #cv2.circle(self.processedData.debug_frame,(largest.x, largest.y), 20, (255, 0, 255), -1)
                 if self.name == 'z':
                     robot.speedz= (self.processedData.debug_frame.shape[1]/2) - largest.x
                     robot.speedz = robot.motion_sim3.speed_limitation(robot.speedz,'z')
@@ -67,7 +67,6 @@ class robot():
                                 robot.speedx = 0
                                 robot.speedz = 0
                                 robot.state = states.align_basket
-                                #print(robot.state)
                         
                             robot.motion_sim3.move(robot.speedx, speedy, robot.speedz,100)
 
@@ -104,34 +103,9 @@ class robot():
             
             if robot.state == states.find_ball:
                 robot.motion_sim3.move(0, 0, direction * 3,100)
-                # time.sleep(0.2)
-                # robot.motion_sim3.move(0, 0, 0,100)
-                # time.sleep(0.2)
+
                 self.count+=1
 
-                    # print(self.count)
-                    # if robot.oponent_basket == 'blue':
-                    #     basket_ = processedData.basket_b
-                    # else:
-                    #     basket_ = processedData.basket_m
-
-                    # try:    
-                    #     print(basket_)
-                    #     if bakset_.exists :
-                    #         print('go to basket')
-                    #         robot.motion_sim3.move(3, 0, basket_.x/100,100)
-                    #         time.sleep(0.6)
-                    #         self.count = 0
-                    #     else: 
-                    #         robot.motion_sim3.move_turn()
-                    #         time.sleep(0.2)
-                    #         robot.motion_sim3.move(0, 0, 0,100)
-                    #         time.sleep(0.6)
-                    # except: 
-                    #     robot.motion_sim3.move_turn()
-                    #     time.sleep(0.2)
-                    #     robot.motion_sim3.move(0, 0, 0,100)
-                    #     time.sleep(0.6)
 
     class referee_Thread(threading.Thread):
 
@@ -188,7 +162,7 @@ class robot():
             print("Starting " + self.name)
 
         def speed_thrower(self,dist):
-            speed = min(int(0.230*dist + 445),1900)
+            speed = min(int(0.240*dist + 415),1900)
             return speed
         
         
@@ -218,7 +192,6 @@ class robot():
                     self.basket_ = processedData.basket_m
                 
                 if largest:
-                    #print(abs(self.basket_.x))
         
                     robot.speedz = (processedData.debug_frame.shape[1]/2) - largest.x 
                     robot.speedx = (2*processedData.debug_frame.shape[0]/3 - largest.y if 2*processedData.debug_frame.shape[0]/3 - largest.y > 0 else 0)
@@ -239,9 +212,6 @@ class robot():
                     
                     robot.motion_sim3.move(robot.speedx, speedy ,robot.speedz,100)
 
-                # else:
-                #     robot.state = 'find_ball'
-
             elif robot.state == states.shoot:
                 self.throw(processedData.depth_frame)
                 robot.state = states.find_ball
@@ -258,20 +228,13 @@ def main_loop(method_controller=True):
     
     if method_controller == False:
         sys.exit()
-    #motion_sim = motion.TurtleRobot()
-    #motion_sim2 = motion.TurtleOmniRobot()
-    robodendron_robot.motion_sim3 = motion.OmniMotionRobot()
-    
-    #camera instance for normal web cameras
-    #cam = camera.OpenCVCamera(id = 2)
-    # camera instance for realsense cameras
+
     cam = camera.RealsenseCamera(exposure = 100)
     
     processor = image_processor.ImageProcessor(cam, debug=debug)
 
     processor.start()
-    #motion_sim.open()
-    #motion_sim2.open()
+
     robodendron_robot.motion_sim3.open()
 
     start = time.time()
@@ -313,16 +276,9 @@ def main_loop(method_controller=True):
                     end = time.time()
                     fps = 30 / (end - start)
                     start = end
-                    # print("FPS: {}, framecount: {}".format(fps, frame_cnt))
-                    # print("ball_count: {}".format(len(processedData.balls)))
-
-                    #if (frame_cnt > 1000):
-                    #    break
 
                 if debug:
                     debug_frame = processedData.debug_frame
-
-                    #cv2.imshow('debug', debug_frame)
 
                     k = cv2.waitKey(1) & 0xff
                     if k == ord('q'):
@@ -336,10 +292,8 @@ def main_loop(method_controller=True):
         
 
     finally:
-        #cv2.destroyAllWindows()
+
         processor.stop()
-        #motion_sim.close()
-        #motion_sim2.close()
         robodendron_robot.motion_sim3.close()
 
 if __name__ == "__main__":

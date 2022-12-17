@@ -8,7 +8,7 @@ class referee_command():
            
 
     def connect(self):
-        self.ws.connect("ws://172.17.157.128:8222") 
+        self.ws.connect("ws://192.168.3.220:8111") 
 
     def listen(self):
         msg = self.ws.recv()

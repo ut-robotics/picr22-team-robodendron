@@ -26,32 +26,30 @@ class OmniMotionRobot(IRobotMotion):
         # Wheel angles
         self.motor_config = [0, 120, 240]
 
+    
+    def open(self):
+
         serial_port: Optional[str] = None
         ports = list_ports.comports()
         devices = {}
 
         for port, _, hwid in sorted(ports):
             devices[hwid] = port
+            print(hwid)
         
         for hwid in devices.keys():
             if STM_32_HWID in hwid:
                 serial_port = devices[hwid]
+                print(serial_port)
                 break
         
         if serial_port is None:
             raise SerialPortNotFound("Serial port not found")
 
         self.port = serial.Serial(serial_port, 115200)
-            
-    
-    def open(self):
 
         ## Create a loop that scan all the port
-        try:
-            self.port = serial.Serial('/dev/ttyACM0')  # open serial port
-        except:
-            self.port = serial.Serial('/dev/ttyACM1')  # open serial port
-        print(self.port.name)         # check which port was really used
+        #check which port was really used
         #ser.write(b'hello')     # write a string
     
     
@@ -123,7 +121,7 @@ if __name__ == "__main__":
         speed = 1000
         bot = OmniMotionRobot()
         bot.open()
-        bot.move(0,-1,0,100)
+        bot.move(3,0,0,100)
         # bot.thrower_control(300)
         # time.sleep(0.5)
         # bot.thrower_control(speed)
