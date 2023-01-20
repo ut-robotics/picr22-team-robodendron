@@ -94,11 +94,15 @@ some support with depth sensing for the robot's aim at the hoops...).
 This project requires good skills in any topic of mechatronics, and depending on how you manage your team,
 and depending on how much your teammates want to be involved, it can go south pretty easily. Deadlines aren't short
 you get the sufficient amount of time to get things done, but falling in the trap of wasting crucial time on useless things
-is so easy...
+is so easy... +
 
 The TAs are very demanding, so you should be very flexible with your solutions, and anticipate all
 tiny attention mistakes in either your code, your CAD and electronics. Some details might seem like a pain, but most of the time
-it's all about best practices for later work in the industry I guess.
+it's all about best practices for later work in the industry I guess. +
+
+All in all, it was a stressful yet interesting project. I appreciate the ressources the University makes available for our work, never before was I able to work with such
+machinery and materials accessible 24/7. My regrets are the miscommunications with some of the TAs and the ambiguity of some indications. This project's outcome was heavily dependent
+on the test robot we got, and in our case it was really bad... +
 
 *Malcom:* +
 
