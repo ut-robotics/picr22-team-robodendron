@@ -1,0 +1,44 @@
+Added Component: Designator=U(TQFP80P890X890X160-32N)
+Add Pin To Net: Unknown Pin: Pin Battery 16V-1
+Add Pin To Net: Unknown Pin: Pin Battery GND-1
+Add Pin To Net: Unknown Pin: Pin M1_OUT1-1
+Add Pin To Net: Unknown Pin: Pin M1_OUT2-1
+Add Pin To Net: Unknown Pin: Pin M2_OUT1-1
+Add Pin To Net: Unknown Pin: Pin M2_OUT2-1
+Add Pin To Net: Unknown Pin: Pin M3_OUT1-1
+Add Pin To Net: Unknown Pin: Pin M3_OUT2-1
+Added Pin To Net: NetName=+3.3V Pin=U-1
+Added Pin To Net: NetName=NetR13_2 Pin=U-2
+Added Pin To Net: NetName=NRST Pin=U-4
+Added Pin To Net: NetName=M2_DIR Pin=U-5
+Added Pin To Net: NetName=M2_PWM Pin=U-6
+Added Pin To Net: NetName=M1_DIR Pin=U-7
+Added Pin To Net: NetName=M1_PWM Pin=U-8
+Added Pin To Net: NetName=M3_DIR Pin=U-9
+Added Pin To Net: NetName=M3_PWM Pin=U-10
+Added Pin To Net: NetName=MCU_nSLEEP_ISOL Pin=U-11
+Added Pin To Net: NetName=THROWER_PWM Pin=U-12
+Added Pin To Net: NetName=GND Pin=U-14
+Added Pin To Net: NetName=+3.3V Pin=U-15
+Added Pin To Net: NetName=GND Pin=U-16
+Added Pin To Net: NetName=+3.3V Pin=U-17
+Added Pin To Net: NetName=M1_ENCODER_CH1 Pin=U-18
+Added Pin To Net: NetName=M1_ENCODER_CH2 Pin=U-19
+Added Pin To Net: NetName=USB_D_M Pin=U-21
+Added Pin To Net: NetName=USB_D_P Pin=U-22
+Added Pin To Net: NetName=Programer_DI0 Pin=U-23
+Added Pin To Net: NetName=Programer_CLK Pin=U-24
+Added Pin To Net: NetName=M2_ENCODER_CH1 Pin=U-27
+Added Pin To Net: NetName=M2_ENCODER_CH2 Pin=U-28
+Added Pin To Net: NetName=M3_ENCODER_CH1 Pin=U-29
+Added Pin To Net: NetName=M3_ENCODER_CH2 Pin=U-30
+Added Pin To Net: NetName=GND Pin=U-32
+Add Class Member: Failed to add class member : Component Battery 16V soldering pad
+Add Class Member: Failed to add class member : Component Battery GND soldering pad
+Add Class Member: Failed to add class member : Component M1_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M1_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component M2_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M2_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component M3_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M3_OUT2 soldering pad
+Added Member To Class: ClassName=picr22RobodendronMainboard Member=Component U STM32441KxT

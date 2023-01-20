@@ -1,0 +1,52 @@
+Change Component Designator: OldDesignator=* NewDesignator=NVC8730
+Add Component: Footprint Not Found TQFP80P890X890X160-32N
+Add Pin To Net: Unknown Pin: Pin Battery GND-1
+Add Pin To Net: Unknown Pin: Pin U-1
+Add Pin To Net: Unknown Pin: Pin U-2
+Add Pin To Net: Unknown Pin: Pin U-4
+Add Pin To Net: Unknown Pin: Pin U-5
+Add Pin To Net: Unknown Pin: Pin U-6
+Add Pin To Net: Unknown Pin: Pin U-7
+Add Pin To Net: Unknown Pin: Pin U-8
+Add Pin To Net: Unknown Pin: Pin U-9
+Add Pin To Net: Unknown Pin: Pin U-10
+Add Pin To Net: Unknown Pin: Pin U-11
+Add Pin To Net: Unknown Pin: Pin U-12
+Add Pin To Net: Unknown Pin: Pin U-14
+Add Pin To Net: Unknown Pin: Pin U-15
+Add Pin To Net: Unknown Pin: Pin U-16
+Add Pin To Net: Unknown Pin: Pin U-17
+Add Pin To Net: Unknown Pin: Pin U-18
+Add Pin To Net: Unknown Pin: Pin U-19
+Add Pin To Net: Unknown Pin: Pin U-21
+Add Pin To Net: Unknown Pin: Pin U-22
+Add Pin To Net: Unknown Pin: Pin U-23
+Add Pin To Net: Unknown Pin: Pin U-24
+Add Pin To Net: Unknown Pin: Pin U-27
+Add Pin To Net: Unknown Pin: Pin U-28
+Add Pin To Net: Unknown Pin: Pin U-29
+Add Pin To Net: Unknown Pin: Pin U-30
+Add Pin To Net: Unknown Pin: Pin U-32
+Added Pin To Net: NetName=NetBattery 16V_1 Pin=Q1-4
+Added Net: Name=NetBattery 16V_1
+Added Pin To Net: NetName=NetM1_OUT1_1 Pin=U1-7
+Added Net: Name=NetM1_OUT1_1
+Added Pin To Net: NetName=NetM1_OUT2_1 Pin=U1-5
+Added Net: Name=NetM1_OUT2_1
+Added Pin To Net: NetName=NetM2_OUT1_1 Pin=U2-7
+Added Net: Name=NetM2_OUT1_1
+Added Pin To Net: NetName=NetM2_OUT2_1 Pin=U2-5
+Added Net: Name=NetM2_OUT2_1
+Added Pin To Net: NetName=NetM3_OUT1_1 Pin=U3-7
+Added Net: Name=NetM3_OUT1_1
+Added Pin To Net: NetName=NetM3_OUT2_1 Pin=U3-5
+Added Net: Name=NetM3_OUT2_1
+Add Class Member: Failed to add class member : Component Battery 16V soldering pad
+Add Class Member: Failed to add class member : Component Battery GND soldering pad
+Add Class Member: Failed to add class member : Component M1_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M1_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component M2_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M2_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component M3_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M3_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component U STM32441KxT

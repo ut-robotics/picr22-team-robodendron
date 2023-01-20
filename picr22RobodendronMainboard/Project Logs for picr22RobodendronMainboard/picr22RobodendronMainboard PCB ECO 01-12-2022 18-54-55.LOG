@@ -1,0 +1,61 @@
+Added Component: Designator=Q1(ONSC-DPAK-3-369C-01_V)
+Add component (AddParameter): Name = "Channel Polarity"; Value = "P Channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ciss Typ (pF)"; Value = "900"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.onsemi.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.onsemi.cn/pub_link/Collateral/NTD25P03L-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.onsemi.cn/pub_link/Collateral/369C.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Coss Typ (pF)"; Value = "290"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Crss Typ (pF)"; Value = "105"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. 4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ID Max (A)"; Value = "25"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "On Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Type"; Value = "DPAK-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin Flange Mount, Body 6.54 x 6.095 mm, Pitch 2.29 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DPAK-3-369C-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Rev. E, 02/2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "NTD25P03LT4G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PD Max (W)"; Value = "75"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qrr Typ (nC)"; Value = "35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Pb-Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "V(BR)DSS Min (V)"; Value = "30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VGS Max (V)"; Value = "15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VGS(th) Max (V)"; Value = "2"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found TQFP80P890X890X160-32N
+Added Pin To Net: NetName=GND Pin=Q1-1
+Added Pin To Net: NetName=+16V Pin=Q1-3
+Add Pin To Net: Unknown Pin: Pin U-1
+Add Pin To Net: Unknown Pin: Pin U-2
+Add Pin To Net: Unknown Pin: Pin U-4
+Add Pin To Net: Unknown Pin: Pin U-5
+Add Pin To Net: Unknown Pin: Pin U-6
+Add Pin To Net: Unknown Pin: Pin U-7
+Add Pin To Net: Unknown Pin: Pin U-8
+Add Pin To Net: Unknown Pin: Pin U-9
+Add Pin To Net: Unknown Pin: Pin U-10
+Add Pin To Net: Unknown Pin: Pin U-11
+Add Pin To Net: Unknown Pin: Pin U-12
+Add Pin To Net: Unknown Pin: Pin U-14
+Add Pin To Net: Unknown Pin: Pin U-15
+Add Pin To Net: Unknown Pin: Pin U-16
+Add Pin To Net: Unknown Pin: Pin U-17
+Add Pin To Net: Unknown Pin: Pin U-18
+Add Pin To Net: Unknown Pin: Pin U-19
+Add Pin To Net: Unknown Pin: Pin U-21
+Add Pin To Net: Unknown Pin: Pin U-22
+Add Pin To Net: Unknown Pin: Pin U-23
+Add Pin To Net: Unknown Pin: Pin U-24
+Add Pin To Net: Unknown Pin: Pin U-27
+Add Pin To Net: Unknown Pin: Pin U-28
+Add Pin To Net: Unknown Pin: Pin U-29
+Add Pin To Net: Unknown Pin: Pin U-30
+Add Pin To Net: Unknown Pin: Pin U-32
+Added Pin To Net: NetName=NetQ1_4 Pin=Q1-4
+Added Net: Name=NetQ1_4
+Added Member To Class: ClassName=picr22RobodendronMainboard Member=Component Q1 NTD25P03LT4G
+Add Class Member: Failed to add class member : Component U STM32441KxT

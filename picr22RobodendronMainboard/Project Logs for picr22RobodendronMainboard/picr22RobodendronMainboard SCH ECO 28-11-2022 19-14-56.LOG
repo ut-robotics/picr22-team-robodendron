@@ -1,0 +1,66 @@
+Remove Pin=U4-4 From Net=NRST
+Remove Pin=U4-5 From Net=M2_DIR
+Remove Pin=U4-6 From Net=M2_PWM
+Remove Pin=U4-7 From Net=M1_DIR
+Remove Pin=U4-8 From Net=M1_PWM
+Remove Pin=U4-9 From Net=M3_DIR
+Remove Pin=U4-10 From Net=M3_PWM
+Remove Pin=U4-11 From Net=MCU_nSLEEP_ISOL
+Remove Pin=U4-12 From Net=THROWER_PWM
+Remove Pin=U4-18 From Net=M1_ENCODER_CH1
+Remove Pin=U4-19 From Net=M1_ENCODER_CH2
+Remove Pin=U4-21 From Net=USB_D_M
+Remove Pin=U4-22 From Net=USB_D_P
+Remove Pin=U4-23 From Net=Programer_DI0
+Remove Pin=U4-24 From Net=Programer_CLK
+Remove Pin=U4-27 From Net=M2_ENCODER_CH1
+Remove Pin=U4-28 From Net=M2_ENCODER_CH2
+Remove Pin=U4-29 From Net=M3_ENCODER_CH1
+Remove Pin=U4-30 From Net=M3_ENCODER_CH2
+Remove Pin=U6-3 From Net=USB_D_P
+Remove Pin=U6-5 From Net=USB_D_M
+Change Component Comment: Designator=* Old Comment=BUK6Y10-30P New Comment=NVC8730
+Add Pin To Net: Pin=J1-3 Old Net=M1_ENCODER_CH1 New Net=M1_ENCODER_CH1
+Add Pin To Net: Pin=J1-4 Old Net=M1_ENCODER_CH2 New Net=M1_ENCODER_CH2
+Add Pin To Net: Pin=J2-3 Old Net=M2_ENCODER_CH1 New Net=M2_ENCODER_CH1
+Add Pin To Net: Pin=J2-4 Old Net=M2_ENCODER_CH2 New Net=M2_ENCODER_CH2
+Add Pin To Net: Pin=J3-3 Old Net=M3_ENCODER_CH1 New Net=M3_ENCODER_CH1
+Add Pin To Net: Pin=J3-4 Old Net=M3_ENCODER_CH2 New Net=M3_ENCODER_CH2
+Add Pin To Net: Pin=J4-2 Old Net=THROWER_PWM_OUT New Net=THROWER_PWM_OUT
+Add Pin To Net: Pin=J5-2 Old Net=USB_D_M New Net=USB_D_M
+Add Pin To Net: Pin=J5-3 Old Net=USB_D_P New Net=USB_D_P
+Add Pin To Net: Pin=J6-02 Old Net=Programer_DI0 New Net=Programer_DI0
+Add Pin To Net: Pin=J6-04 Old Net=Programer_CLK New Net=Programer_CLK
+Add Pin To Net: Pin=J6-10 Old Net=NRST New Net=NRST
+Add Pin To Net: Pin=M1-3 Old Net=M1_PWM New Net=M1_PWM
+Add Pin To Net: Pin=M1-4 Old Net=M1_DIR New Net=M1_DIR
+Add Pin To Net: Pin=M1-5 Old Net=M2_PWM New Net=M2_PWM
+Add Pin To Net: Pin=M1-6 Old Net=M2_DIR New Net=M2_DIR
+Add Pin To Net: Pin=M1-11 Old Net=M1_PWM_Driver New Net=M1_PWM_Driver
+Add Pin To Net: Pin=M1-12 Old Net=M1_DIR_Driver New Net=M1_DIR_Driver
+Add Pin To Net: Pin=M1-13 Old Net=M2_PWM_Driver New Net=M2_PWM_Driver
+Add Pin To Net: Pin=M1-14 Old Net=M2_DIR_Driver New Net=M2_DIR_Driver
+Add Pin To Net: Pin=M2-3 Old Net=M3_PWM New Net=M3_PWM
+Add Pin To Net: Pin=M2-4 Old Net=M3_DIR New Net=M3_DIR
+Add Pin To Net: Pin=M2-5 Old Net=THROWER_PWM New Net=THROWER_PWM
+Add Pin To Net: Pin=M2-6 Old Net=MCU_nSLEEP_ISOL New Net=MCU_nSLEEP_ISOL
+Add Pin To Net: Pin=M2-11 Old Net=M3_PWM_Driver New Net=M3_PWM_Driver
+Add Pin To Net: Pin=M2-12 Old Net=M3_DIR_Driver New Net=M3_DIR_Driver
+Add Pin To Net: Pin=M2-13 Old Net=THROWER_PWM_OUT New Net=THROWER_PWM_OUT
+Add Pin To Net: Pin=M2-14 Old Net=nSLEEP_Driver New Net=nSLEEP_Driver
+Add Pin To Net: Pin=U1-2 Old Net=IPROPI_M1 New Net=IPROPI_M1
+Add Pin To Net: Pin=U1-9 Old Net=M1_PWM_Driver New Net=M1_PWM_Driver
+Add Pin To Net: Pin=U1-10 Old Net=M1_DIR_Driver New Net=M1_DIR_Driver
+Add Pin To Net: Pin=U1-12 Old Net=SR_M1 New Net=SR_M1
+Add Pin To Net: Pin=U2-2 Old Net=IPROPI_M2 New Net=IPROPI_M2
+Add Pin To Net: Pin=U2-12 Old Net=SR_M2 New Net=SR_M2
+Add Pin To Net: Pin=U3-2 Old Net=IPROPI_M3 New Net=IPROPI_M3
+Add Pin To Net: Pin=U3-9 Old Net=M3_PWM_Driver New Net=M3_PWM_Driver
+Add Pin To Net: Pin=U3-10 Old Net=M3_DIR_Driver New Net=M3_DIR_Driver
+Add Pin To Net: Pin=U3-12 Old Net=SR_M3 New Net=SR_M3
+Change Pin Designator/Name:  Old Designator=*-2 Old Name=GND New Designator =GND New Name=2
+Change Pin Designator/Name:  Old Designator=U1-3 Old Name=S\L\E\E\P\ New Designator =S\L\E\E\P\ New Name=3
+Change Pin Designator/Name:  Old Designator=U1-8 Old Name=DRVOFF New Designator =DRVOFF New Name=8
+Change Pin Designator/Name:  Old Designator=U2-3 Old Name=S\L\E\E\P\ New Designator =S\L\E\E\P\ New Name=3
+Change Pin Designator/Name:  Old Designator=U2-8 Old Name=DRVOFF New Designator =DRVOFF New Name=8
+Change Pin Designator/Name:  Old Designator=U3-8 Old Name=DRVOFF New Designator =DRVOFF New Name=8

@@ -1,0 +1,18 @@
+Component	Description	Designator	Quantity	"Mouser order code
+"	"Farnell order code
+"	"TME order code
+"
+100n capacitor	Cap Ceramic 100nF 50V X7R 10% Pad SMD 0603 +125°C Automotive T/	C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25	25	810-CGA3E2X7R1H104K		
+LTST-C191TBKT	LED BLUE CLEAR CHIP SMD	D1, D2	2	859-LTST-C191TBKT		
+215079-4	4 Position Receptacle Connector Through Hole	J1, J2, J3, J4	4	571-215079-4		
+10118193-0001LF	"USB - micro B USB 2.0 Receptacle Connector 5 Position Surface Mount, Right Angle; Through Hole"	J5	1	649-10118193-0001LF		
+FTSH-105-XX-X-DV	"Connector Header Surface Mount 10 position 0.050"" (1.27mm)"	J6	1	200-FTSH10501LDVK		
+MAX14930DASE+		M1, M2	2	700-MAX14930DASE+		
+NPC164		NPC164	1	863-NCP164CSN330T1G		
+NVC8730		NVC8730	1	863-NCV8730ASN500T1G		
+NTD25P03LT4G	Power MOSFET, -25 A, -30 V, Logic Level P-Channel, 3-Pin DPAK, Pb-Free, Tape and Reel	Q1	1	863-NTD25P03LT4G		
+10k resistor	Chip Resistor, 10 KOhm, +/- 1%, 100 mW, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel	R1, R2, R3, R6, R7, R8, R20, R21, R22	9	71-CRCW0603-10K-E3		
+3.3k resistor	RES SMD 3.3K OHM 0.1% 1/10W 0603	R10, R11, R12, R13	4	667-ERA-3AEB332V		
+STM32441KxT		U	1	511-STM32G441KBT6		
+DRV8243HQRXYRQ1	Automotive 40-V, 12-A H-Bridge driver with integrated current sensing and feedback 14-VQFN-HR -40 to 125	U1, U2, U3	3	595-DRV8243HQRXYRQ1		
+CM1223-02SO	Industry First Low Capacitance ESD Protection Arrays with Backdrive Protection, 5-Pin SOT-23, Pb-Free, Tape and Reel	U6	1	748-CM1223-02SO		

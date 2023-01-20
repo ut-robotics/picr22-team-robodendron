@@ -1,0 +1,82 @@
+Change Component Footprint: Designator=R20 Old Footprint=FP-CRCW2512-e3-MFG New Footprint=RESC1609X50X30NL8T20
+Change Component Footprint: Designator=R21 Old Footprint=FP-CRCW2512-e3-MFG New Footprint=RESC1609X50X30NL8T20
+Change Component Footprint: Designator=R22 Old Footprint=FP-CRCW2512-e3-MFG New Footprint=RESC1609X50X30NL8T20
+Change Component Comment : Designator=R20 Old Comment=100k New Comment=10k
+Change Component Comment : Designator=R21 Old Comment=100k New Comment=10k
+Change Component Comment : Designator=R22 Old Comment=100k New Comment=10k
+Change Managed Component Library Link : Designator=R20 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=913A0C5D-AE6A-4F1A-8297-2890A0E806C8 New ItemGUID=1DB640A7-01FA-40C0-9C6B-F8AB2FC9493E Old RevisionGUID=75AD1789-7DD7-4BD8-ADD4-151507C33884 New RevisionGUID=CD1C2C1B-133A-4F07-A6D2-1D76A18A9CF7
+Change Managed Component Library Link : Designator=R21 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=913A0C5D-AE6A-4F1A-8297-2890A0E806C8 New ItemGUID=1DB640A7-01FA-40C0-9C6B-F8AB2FC9493E Old RevisionGUID=75AD1789-7DD7-4BD8-ADD4-151507C33884 New RevisionGUID=CD1C2C1B-133A-4F07-A6D2-1D76A18A9CF7
+Change Managed Component Library Link : Designator=R22 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=913A0C5D-AE6A-4F1A-8297-2890A0E806C8 New ItemGUID=1DB640A7-01FA-40C0-9C6B-F8AB2FC9493E Old RevisionGUID=75AD1789-7DD7-4BD8-ADD4-151507C33884 New RevisionGUID=CD1C2C1B-133A-4F07-A6D2-1D76A18A9CF7
+Change component parameters: Designator = "R20" ("R20"); Footprint = "FP-CRCW2512-e3-MFG"; UniqueID = "\ZXDWZSXL" ("\ZXDWZSXL")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.vishay.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/11809/0900766b80d98afc-11809037.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DatasheetVersion"; Value = "06/2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.45 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "1.55 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Vishay Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155 degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55 degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "5000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "2-Pin Surface Mount Device, Body 1.575 x 0.85 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "75 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R21" ("R21"); Footprint = "FP-CRCW2512-e3-MFG"; UniqueID = "\IMHBOYNJ" ("\IMHBOYNJ")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.vishay.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/11809/0900766b80d98afc-11809037.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DatasheetVersion"; Value = "06/2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.45 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "1.55 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Vishay Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155 degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55 degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "5000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "2-Pin Surface Mount Device, Body 1.575 x 0.85 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "75 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R22" ("R22"); Footprint = "FP-CRCW2512-e3-MFG"; UniqueID = "\XSNVFZAL" ("\XSNVFZAL")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.vishay.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/11809/0900766b80d98afc-11809037.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DatasheetVersion"; Value = "06/2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.45 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "1.55 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Vishay Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155 degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55 degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "5000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "2-Pin Surface Mount Device, Body 1.575 x 0.85 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "75 V"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin Battery 16V-1
+Add Pin To Net: Unknown Pin: Pin Battery GND-1
+Add Pin To Net: Unknown Pin: Pin M1_OUT1-1
+Add Pin To Net: Unknown Pin: Pin M1_OUT2-1
+Add Pin To Net: Unknown Pin: Pin M2_OUT1-1
+Add Pin To Net: Unknown Pin: Pin M2_OUT2-1
+Add Pin To Net: Unknown Pin: Pin M3_OUT1-1
+Add Pin To Net: Unknown Pin: Pin M3_OUT2-1
+Add Class Member: Failed to add class member : Component Battery 16V soldering pad
+Add Class Member: Failed to add class member : Component Battery GND soldering pad
+Add Class Member: Failed to add class member : Component M1_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M1_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component M2_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M2_OUT2 soldering pad
+Add Class Member: Failed to add class member : Component M3_OUT1 soldering pad
+Add Class Member: Failed to add class member : Component M3_OUT2 soldering pad

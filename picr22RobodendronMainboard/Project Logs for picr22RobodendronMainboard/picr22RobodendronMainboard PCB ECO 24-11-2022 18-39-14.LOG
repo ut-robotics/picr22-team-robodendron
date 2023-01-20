@@ -1,0 +1,399 @@
+Added Component: Designator=*(TSOP95P280X110-6N)
+Added Component: Designator=*(TSOP95P280X110-6N)
+Added Component: Designator=J1(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J1(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(TE_215079-4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "215079-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-6 Omron Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/215079-4/TE%20Connectivity%20AMP%20Connectors/view-part/2366486/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-215079-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(FCI_10118193-0001LF)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Amphenol ICC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "10118193-0001LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/10118193-0001LF/Amphenol%20FCI/view-part/2758989/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J5(FCI_10118193-0001LF)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Amphenol ICC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "10118193-0001LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/10118193-0001LF/Amphenol%20FCI/view-part/2758989/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(SAMTEC_FTSH-105-XX-X-DV)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "FTSH-105-XX-X-DV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(SAMTEC_FTSH-105-XX-X-DV)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "FTSH-105-XX-X-DV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=M1(SOIC127P600X175-16N)
+Added Component: Designator=M1(SOIC127P600X175-16N)
+Added Component: Designator=M2(SOIC127P600X175-16N)
+Added Component: Designator=M2(SOIC127P600X175-16N)
+Added Component: Designator=NPC164(TSOP95P280X110-5N)
+Added Component: Designator=NPC164(TSOP95P280X110-5N)
+Added Component: Designator=U1(FP-RXY0014A-MFG)
+Added Component: Designator=U1(FP-RXY0014A-MFG)
+Added Component: Designator=U2(FP-RXY0014A-MFG)
+Added Component: Designator=U2(FP-RXY0014A-MFG)
+Added Component: Designator=U3(FP-RXY0014A-MFG)
+Added Component: Designator=U3(FP-RXY0014A-MFG)
+Add Component: Footprint Not Found TQFP80P890X890X160-32N
+Add Component: Footprint Not Found TQFP80P890X890X160-32N
+Added Pin To Net: NetName=+3.3V Pin=J1-2
+Added Pin To Net: NetName=+3.3V Pin=J1-2
+Added Pin To Net: NetName=+3.3V Pin=J2-2
+Added Pin To Net: NetName=+3.3V Pin=J2-2
+Added Pin To Net: NetName=+3.3V Pin=J3-2
+Added Pin To Net: NetName=+3.3V Pin=J3-2
+Added Pin To Net: NetName=+3.3V Pin=J6-01
+Added Pin To Net: NetName=+3.3V Pin=J6-01
+Added Pin To Net: NetName=+3.3V Pin=M1-1
+Added Pin To Net: NetName=+3.3V Pin=M1-1
+Added Pin To Net: NetName=+3.3V Pin=M2-1
+Added Pin To Net: NetName=+3.3V Pin=M2-1
+Added Pin To Net: NetName=+3.3V Pin=NPC164-4
+Added Pin To Net: NetName=+3.3V Pin=NPC164-4
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=+5V Pin=*-5
+Added Pin To Net: NetName=+5V Pin=*-5
+Added Pin To Net: NetName=+5V Pin=J5-1
+Added Pin To Net: NetName=+5V Pin=J5-1
+Added Pin To Net: NetName=+5V Pin=M1-16
+Added Pin To Net: NetName=+5V Pin=M1-16
+Added Pin To Net: NetName=+5V Pin=M2-16
+Added Pin To Net: NetName=+5V Pin=M2-16
+Added Pin To Net: NetName=+5V Pin=NPC164-1
+Added Pin To Net: NetName=+5V Pin=NPC164-1
+Added Net: Name=+5V
+Added Pin To Net: NetName=+16V Pin=*-1
+Added Pin To Net: NetName=+16V Pin=*-1
+Added Pin To Net: NetName=+16V Pin=*-4
+Added Pin To Net: NetName=+16V Pin=*-5
+Added Pin To Net: NetName=+16V Pin=*-6
+Added Pin To Net: NetName=+16V Pin=U1-4
+Added Pin To Net: NetName=+16V Pin=U1-4
+Added Pin To Net: NetName=+16V Pin=U2-4
+Added Pin To Net: NetName=+16V Pin=U2-4
+Added Pin To Net: NetName=+16V Pin=U3-4
+Added Pin To Net: NetName=+16V Pin=U3-4
+Added Net: Name=+16V
+Added Pin To Net: NetName=BATTERY  +16V Pin=*-2
+Added Pin To Net: NetName=BATTERY  +16V Pin=*-3
+Added Net: Name=BATTERY  +16V
+Added Pin To Net: NetName=BATTERY  GND Pin=*-1
+Added Pin To Net: NetName=BATTERY  GND Pin=*-2
+Added Pin To Net: NetName=BATTERY  GND Pin=*-2
+Added Pin To Net: NetName=BATTERY  GND Pin=J1-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J1-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J2-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J2-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J3-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J3-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J4-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J4-1
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-5
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-5
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S1
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S1
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S2
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S2
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S3
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S3
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S4
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S4
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S5
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S5
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S6
+Added Pin To Net: NetName=BATTERY  GND Pin=J5-S6
+Added Pin To Net: NetName=BATTERY  GND Pin=J6-03
+Added Pin To Net: NetName=BATTERY  GND Pin=J6-03
+Added Pin To Net: NetName=BATTERY  GND Pin=J6-05
+Added Pin To Net: NetName=BATTERY  GND Pin=J6-05
+Added Pin To Net: NetName=BATTERY  GND Pin=J6-09
+Added Pin To Net: NetName=BATTERY  GND Pin=J6-09
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-2
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-2
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-8
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-8
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-10
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-10
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-15
+Added Pin To Net: NetName=BATTERY  GND Pin=M1-15
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-2
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-2
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-8
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-8
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-10
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-10
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-15
+Added Pin To Net: NetName=BATTERY  GND Pin=M2-15
+Added Pin To Net: NetName=BATTERY  GND Pin=NPC164-2
+Added Pin To Net: NetName=BATTERY  GND Pin=NPC164-2
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-6
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-6
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-11
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-11
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-13
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-13
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-14
+Added Pin To Net: NetName=BATTERY  GND Pin=U1-14
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-6
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-6
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-11
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-11
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-13
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-13
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-14
+Added Pin To Net: NetName=BATTERY  GND Pin=U2-14
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-6
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-6
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-11
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-11
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-13
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-13
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-14
+Added Pin To Net: NetName=BATTERY  GND Pin=U3-14
+Added Net: Name=BATTERY  GND
+Added Pin To Net: NetName=IPROPI_M1 Pin=U1-2
+Added Pin To Net: NetName=IPROPI_M1 Pin=U1-2
+Added Net: Name=IPROPI_M1
+Added Pin To Net: NetName=IPROPI_M2 Pin=U2-2
+Added Pin To Net: NetName=IPROPI_M2 Pin=U2-2
+Added Net: Name=IPROPI_M2
+Added Pin To Net: NetName=IPROPI_M3 Pin=U3-2
+Added Pin To Net: NetName=IPROPI_M3 Pin=U3-2
+Added Net: Name=IPROPI_M3
+Added Pin To Net: NetName=M1_DIR_Driver Pin=M1-12
+Added Pin To Net: NetName=M1_DIR_Driver Pin=M1-12
+Added Pin To Net: NetName=M1_DIR_Driver Pin=U1-10
+Added Pin To Net: NetName=M1_DIR_Driver Pin=U1-10
+Added Net: Name=M1_DIR_Driver
+Added Pin To Net: NetName=M1_DIR Pin=M1-4
+Added Pin To Net: NetName=M1_DIR Pin=M1-4
+Added Net: Name=M1_DIR
+Added Pin To Net: NetName=M1_ENCODER_CH1 Pin=J1-3
+Added Pin To Net: NetName=M1_ENCODER_CH1 Pin=J1-3
+Added Net: Name=M1_ENCODER_CH1
+Added Pin To Net: NetName=M1_ENCODER_CH2 Pin=J1-4
+Added Pin To Net: NetName=M1_ENCODER_CH2 Pin=J1-4
+Added Net: Name=M1_ENCODER_CH2
+Added Pin To Net: NetName=M1_OUT1 Pin=U1-7
+Added Pin To Net: NetName=M1_OUT1 Pin=U1-7
+Added Net: Name=M1_OUT1
+Added Pin To Net: NetName=M1_OUT2 Pin=U1-5
+Added Pin To Net: NetName=M1_OUT2 Pin=U1-5
+Added Net: Name=M1_OUT2
+Added Pin To Net: NetName=M1_PWM_Driver Pin=M1-11
+Added Pin To Net: NetName=M1_PWM_Driver Pin=M1-11
+Added Pin To Net: NetName=M1_PWM_Driver Pin=U1-9
+Added Pin To Net: NetName=M1_PWM_Driver Pin=U1-9
+Added Net: Name=M1_PWM_Driver
+Added Pin To Net: NetName=M1_PWM Pin=M1-3
+Added Pin To Net: NetName=M1_PWM Pin=M1-3
+Added Net: Name=M1_PWM
+Added Pin To Net: NetName=M2_DIR_Driver Pin=M1-14
+Added Pin To Net: NetName=M2_DIR_Driver Pin=M1-14
+Added Net: Name=M2_DIR_Driver
+Added Pin To Net: NetName=M2_DIR Pin=M1-6
+Added Pin To Net: NetName=M2_DIR Pin=M1-6
+Added Net: Name=M2_DIR
+Added Pin To Net: NetName=M2_ENCODER_CH1 Pin=J2-3
+Added Pin To Net: NetName=M2_ENCODER_CH1 Pin=J2-3
+Added Net: Name=M2_ENCODER_CH1
+Added Pin To Net: NetName=M2_ENCODER_CH2 Pin=J2-4
+Added Pin To Net: NetName=M2_ENCODER_CH2 Pin=J2-4
+Added Net: Name=M2_ENCODER_CH2
+Added Pin To Net: NetName=M2_OUT1 Pin=U2-7
+Added Pin To Net: NetName=M2_OUT1 Pin=U2-7
+Added Net: Name=M2_OUT1
+Added Pin To Net: NetName=M2_OUT2 Pin=U2-5
+Added Pin To Net: NetName=M2_OUT2 Pin=U2-5
+Added Net: Name=M2_OUT2
+Added Pin To Net: NetName=M2_PWM_Driver Pin=M1-13
+Added Pin To Net: NetName=M2_PWM_Driver Pin=M1-13
+Added Net: Name=M2_PWM_Driver
+Added Pin To Net: NetName=M2_PWM Pin=M1-5
+Added Pin To Net: NetName=M2_PWM Pin=M1-5
+Added Net: Name=M2_PWM
+Added Pin To Net: NetName=M3_DIR_Driver Pin=M2-12
+Added Pin To Net: NetName=M3_DIR_Driver Pin=M2-12
+Added Pin To Net: NetName=M3_DIR_Driver Pin=U3-10
+Added Pin To Net: NetName=M3_DIR_Driver Pin=U3-10
+Added Net: Name=M3_DIR_Driver
+Added Pin To Net: NetName=M3_DIR Pin=M2-4
+Added Pin To Net: NetName=M3_DIR Pin=M2-4
+Added Net: Name=M3_DIR
+Added Pin To Net: NetName=M3_ENCODER_CH1 Pin=J3-3
+Added Pin To Net: NetName=M3_ENCODER_CH1 Pin=J3-3
+Added Net: Name=M3_ENCODER_CH1
+Added Pin To Net: NetName=M3_ENCODER_CH2 Pin=J3-4
+Added Pin To Net: NetName=M3_ENCODER_CH2 Pin=J3-4
+Added Net: Name=M3_ENCODER_CH2
+Added Pin To Net: NetName=M3_OUT1 Pin=U3-7
+Added Pin To Net: NetName=M3_OUT1 Pin=U3-7
+Added Net: Name=M3_OUT1
+Added Pin To Net: NetName=M3_OUT2 Pin=U3-5
+Added Pin To Net: NetName=M3_OUT2 Pin=U3-5
+Added Net: Name=M3_OUT2
+Added Pin To Net: NetName=M3_PWM_Driver Pin=M2-11
+Added Pin To Net: NetName=M3_PWM_Driver Pin=M2-11
+Added Pin To Net: NetName=M3_PWM_Driver Pin=U3-9
+Added Pin To Net: NetName=M3_PWM_Driver Pin=U3-9
+Added Net: Name=M3_PWM_Driver
+Added Pin To Net: NetName=M3_PWM Pin=M2-3
+Added Pin To Net: NetName=M3_PWM Pin=M2-3
+Added Net: Name=M3_PWM
+Added Pin To Net: NetName=MCU_nSLEEP_ISOL Pin=M2-6
+Added Pin To Net: NetName=MCU_nSLEEP_ISOL Pin=M2-6
+Added Net: Name=MCU_nSLEEP_ISOL
+Added Net: Name=NetD?_1
+Add Net: Net with name "NetD?_1" already exists
+Add Net: Net with name "NetD?_1" already exists
+Add Net: Net with name "NetD?_1" already exists
+Added Pin To Net: NetName=NetNPC164_3 Pin=NPC164-3
+Added Net: Name=NetNPC164_3
+Add Net: Net with name "NetNPC164_3" already exists
+Added Pin To Net: NetName=NetR1_2 Pin=U1-8
+Added Net: Name=NetR1_2
+Add Net: Net with name "NetR1_2" already exists
+Added Pin To Net: NetName=NetR2_2 Pin=U1-3
+Added Net: Name=NetR2_2
+Add Net: Net with name "NetR2_2" already exists
+Added Pin To Net: NetName=NetR3_2 Pin=U2-8
+Added Net: Name=NetR3_2
+Add Net: Net with name "NetR3_2" already exists
+Added Pin To Net: NetName=NetR4_2 Pin=U2-3
+Added Net: Name=NetR4_2
+Add Net: Net with name "NetR4_2" already exists
+Added Pin To Net: NetName=NetR5_2 Pin=U3-8
+Added Net: Name=NetR5_2
+Add Net: Net with name "NetR5_2" already exists
+Added Pin To Net: NetName=NetR6_2 Pin=U3-3
+Added Net: Name=NetR6_2
+Add Net: Net with name "NetR6_2" already exists
+Added Net: Name=NetR9_2
+Add Net: Net with name "NetR9_2" already exists
+Added Pin To Net: NetName=NRST Pin=J6-10
+Added Pin To Net: NetName=NRST Pin=J6-10
+Added Net: Name=NRST
+Added Pin To Net: NetName=nSLEEP_Driver Pin=M2-14
+Added Pin To Net: NetName=nSLEEP_Driver Pin=M2-14
+Added Net: Name=nSLEEP_Driver
+Added Pin To Net: NetName=Programer_CLK Pin=J6-04
+Added Pin To Net: NetName=Programer_CLK Pin=J6-04
+Added Net: Name=Programer_CLK
+Added Pin To Net: NetName=Programer_DI0 Pin=J6-02
+Added Pin To Net: NetName=Programer_DI0 Pin=J6-02
+Added Net: Name=Programer_DI0
+Added Pin To Net: NetName=SR_M1 Pin=U1-12
+Added Pin To Net: NetName=SR_M1 Pin=U1-12
+Added Net: Name=SR_M1
+Added Pin To Net: NetName=SR_M2 Pin=U2-12
+Added Pin To Net: NetName=SR_M2 Pin=U2-12
+Added Net: Name=SR_M2
+Added Pin To Net: NetName=SR_M3 Pin=U3-12
+Added Pin To Net: NetName=SR_M3 Pin=U3-12
+Added Net: Name=SR_M3
+Added Pin To Net: NetName=THROWER_PWM_OUT Pin=J4-2
+Added Pin To Net: NetName=THROWER_PWM_OUT Pin=J4-2
+Added Pin To Net: NetName=THROWER_PWM_OUT Pin=M2-13
+Added Pin To Net: NetName=THROWER_PWM_OUT Pin=M2-13
+Added Net: Name=THROWER_PWM_OUT
+Added Pin To Net: NetName=THROWER_PWM Pin=M2-5
+Added Pin To Net: NetName=THROWER_PWM Pin=M2-5
+Added Net: Name=THROWER_PWM
+Added Pin To Net: NetName=USB_D_M Pin=J5-2
+Added Pin To Net: NetName=USB_D_M Pin=J5-2
+Added Net: Name=USB_D_M
+Added Pin To Net: NetName=USB_D_P Pin=J5-3
+Added Pin To Net: NetName=USB_D_P Pin=J5-3
+Added Net: Name=USB_D_P
+Added Class: Name=picr22RobodendronMainboard
+Added Class: Name=pirc22MainboardRobodendron
+Added Room: Name=picr22RobodendronMainboard
+Added Room: Name=pirc22MainboardRobodendron
