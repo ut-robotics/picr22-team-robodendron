@@ -26,8 +26,7 @@ input/get_gamepad - communication with the gamepad controller +
 pyrealsense2 - Realsense camera +
 
 *Game logic* +
-
-[.text-justify]
+	
 The robot starts when the referee sends the command with the target basket. It will rotate until it sees a ball. 
 If it sees a ball, it drives towards it until it is close enough. Once it is close enough, it orbits around the ball until it is aligned with the ball and the target basket. 
 It estimates the distance with the basket and engages the thrower motor accordingly. It goes forward to throw the ball. Then it starts again to search a ball by rotating.
@@ -39,7 +38,6 @@ image::code_diagram.png[]
 
 *Code review* +
 
-[.text-justify]
 The logic of the movement of the robots was good since the robot was moving with smooth trajectory towards the ball and the alignment with the baskets were smooth as well. The main improvement is in the machine vison part. The color detection and the depth estimation could be improved to get a better accuracy when aligning the ball and the basket so we can score more often. The robot got issues as well to detect the balls on the field when they were too far from the robot. This can as well be improved by adjusting the OpenCV part. The robot didn't have the logic to ignore the balls when they are outside of the field or to avoid the collision with the baskets. This cause a lot of penalty during competition, and this is something important to implement. This can be done as well by developing more the machine vision part. The logic to search the ball can be improve by making straight trajectory between the opponent basket the team basket. This would allow to find all the balls on the filed even if the last ball remaining is at the opposite side. +
 
 == Mechanics
@@ -52,9 +50,22 @@ image::robot.jpg["The robot"]
 
 == Electronics
 
+The final electronics are the test electronics. The two servos on the thrower are not implemented in the code so there is no need for them to be linked to the mainboard. The pcb was not finished for multiples reasons, first assembling the test electronics took longer than expected because the test robot we had was very small and not adapted for the test electronics, it was made for a pcb. Then the mainboard and the voltage regulator were short circuited, had to be replaced reprogrammed and refitted on the test robot leading to a month of delay. Finally, I also learned how to design a pcb while making it, leading to some mistakes in designing that cost time that I no longer had.
+
+The PCB was not finished in time, but even so there was nothing to connect the two servos on the thrower, so adding the connections would have been better. We also noticed that having a larger robot makes fitting the test electronics in it much easier. With the test robot we really struggled as it was very small, but our new robot it was much smoother.
+
+As can be seen on this picture, thanks to spacious design of the robot, there is ample room for all the components and the cable management is clean. This is also helped thanks to connectors of the battery being embedded in the design and not dangling everywhere. +
+image::cabling.jpg[]
+
+I worked on the electronics, I therefore mostly learned how to design a pcb. Unfortunately, most of the mistakes chere either out of my control, like the test robot being to small or the mainboard shortcircuiting for no apparent reason. But since I now know how to design a pcb if I were to do the same thing again it would probably work.
+I liked being able to work manually on the robot. I however disliked the lack of instructions on how to design teh pcb. I felt like both learning how to do it and doing it at the same time led to a very tight schedule. I had the impression that this course is not for learning but for doing something that is already learned, which is a shame.
+For next year students I definetly advise to choose the largest robot at the beginning of the year as it leads to a much easier time fixing the test electronics. I would also recommend them to design their own robot with the test electronics in mind, so that no team the year after suffers from haing unfixable test electronics to the robot.
+And for the instructors I would like more documentation on altium and how to design the pcb for this application, I think this would both accelerate the progression curve of people learning how to design pcbs. It would also probably lower the workload on the instructors as a part of the solicitation would be solved by the sudents themselves.
+I also think that the fixed points awarded for each task does not adequatly reflect the workload. For example attaching the test electronics gives the same amount to everyone, but a team starting with a large robot and clean electronics has a much easier time doing this that one starting with a small robot and cabling that has to be done over again.
+
+
 == Personal comments
 
-[.text-justify]
 *Gautier:* I personally worked on the robot's chassis (base chassis, camera mounts, anything that holds
 the robot's parts together...), as well as some of the software (gamepad control, vision logic... I gave Malcom
 some support with depth sensing for the robot's aim at the hoops...).
