@@ -11,6 +11,7 @@ https://a360.co/3Thbv4A +
 == Programming
 
 == Mechanics
+image::robot.jpg["The robot"]
 
 == Electronics
 
