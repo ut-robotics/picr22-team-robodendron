@@ -42,11 +42,38 @@ The logic of the movement of the robots was good since the robot was moving with
 
 == Mechanics
 
+To design our mechanic, we started from what we had available. 
+To find mechanical solutions, we had the teacher robot that we saw performing on the very first day, and we were given the Jordan robot chassis. 
+We were also given CAD components such as the camera, and the Jordan robot complete design on fusion 360. +
+
+The only thing we used that was not provided at the start was the grabcad 3D design of the servo and the brushless, so we don’t have to build them ourselves. For the rest, we built it all with the available resources. +
+
+*Thrower design:* +
+
+To build the thrower, we decided to develop it little by little to keep a functional component, and have a working prototype as soon as possible.
+We started by building the static thrower, with a single ramp at 60°, the bottom at 5mm from the ground, and the brushless at 35mm from the ramp, and 40 mm to the ground to press the ball on the ramp. Since we were working with the Jordan robot, we adapted our fixation system to the former system. +
+
+image::thrower1.png[]
+
+Then we tried to make the thrower change angle. We decided to range from 50° to 70°, and used an arm with one of the extremities attached to the axis of the center of the brushless.
+We faced a problem of size and torque at that time, since the micro servo was not strong enough to rotate the arm, and there was no space to place the servo, since there was a nozzle to guide the ball to the thrower. To solve the issue, we decided to use a sliding pin close to the extremity of the thrower, to place the servo, behind the thrower. That way we reduced the torque and found a place with enough space to place the servo. +
+
+image::thrower2.png[]
+
+The last part we implemented was the way to hold a ball in the thrower. We decided to do that with a roller connected to a servo. To implement that component, we needed to modify the original design of the ramp to add a first ramp where the ball holds before being fed to the thrower. At last we just connected the new thrower to the new chassis. +
+
+image::thrower3.png[]
+
 Here's a picture of our robot in its final state, with all the parts fully assembled. It's quite big as we had to play with
 the test robot electronics. In a way, it's more practical since we have room to fit all the cables... We struggled with the
 more compact test robot we had, so we figured we'd go big for our own. 
 
 image::robot.jpg["The robot"]
+
+*Overall review:* +
+I think our overall design was quite good for launching the ball, the distance to the floor was adapted to collect the ball, the nozzle was big enough to lead the ball to the thrower in case of bad lining up. We didn’t take the full available space but kept enough to have some space to work. We designed pieces, so the ball doesn’t get stuck on the robot. The baseplate is at a good height so it doesn’t happen to hit the carpet, as well as the thrower lower parts. The overall structure also had a good rigidity.
+We should have built something to cover the wheels in case of shock. The pin that connects the wheels to the motor can get damaged. The brushless gets full of hair from the carpet. +
+
 
 == Electronics
 
@@ -62,7 +89,7 @@ image::cabling.jpg[]
 == Personal comments
 
 *Gautier:* I personally worked on the robot's chassis (base chassis, camera mounts, anything that holds
-the robot's parts together...), as well as some of the software (gamepad control, vision logic... I gave Malcom
+the robot's parts together...) and the omniwheels, as well as some of the software (gamepad control, vision logic... I gave Malcom
 some support with depth sensing for the robot's aim at the hoops...).
 This project requires good skills in any topic of mechatronics, and depending on how you manage your team,
 and depending on how much your teammates want to be involved, it can go south pretty easily. Deadlines aren't short
@@ -76,6 +103,48 @@ it's all about best practices for later work in the industry I guess.
 *Malcom:*
 
 *Léon:*
+
+*my work:* +
+-mechanics +
+- thrower complete design +
+- motor mounts +
+- helped on the omni wheels and the camera mount +
+- manufacturing process on fusion and the machines +
+- found technical solutions along with Gautier Reynes and the professors.  +
+- physical calibration of the parameters. +
+- presentations. +
+- assemble the robot. +
+
+*Learning experience:* +
+New mechanical methods. +
+Fusion 360, 3D modeling and manufacturing
+milling machine +
+work method for 3D modeling +
+A team needs a leader from the start. +
+The Agile method is a necessity for this type of work. +
+
+*Improvement for next time:* +
+Better awareness of the deadline, by putting them on paper from the start. More team meetings to know exactly where everyone is in their work. +
+
+
+
+
+
+*Opinion on the course:* +
+
+Great to have a 24/7 access card to be able to work freely. Lots of tools we could use. 
+I didn’t like that I spent weeks on reviews. I corrected the review and then there were new things to correct on the next review everytime, even for things that had remained untouched from the start. But of course reviews were helpful for improving the design.
+Too much attention on some details, to not validate points for the whole team is discouraging when the work was globally finished long before the due date.
+The course was a very good opportunity to get hands-on experience. 
+In the end we all had the same robot more or less. When I signed up, I really thought that we would get a chance to all build something we designed ourselves from scratch. +
+
+*Suggestion for next year:* +
+Start by choosing a leader, and put the deadline on a schedule. +
+work consistently+
+
+*For the teachers:* +
+You are very capable, but I felt very little empathy and flexibility. We are humans, not machines. +
+
 
 *Nathan:* I worked on the electronics, I therefore mostly learned how to design a pcb. Unfortunately, most of the mistakes chere either out of my control, like the test robot being to small or the mainboard shortcircuiting for no apparent reason. But since I now know how to design a pcb if I were to do the same thing again it would probably work.
 I liked being able to work manually on the robot. I however disliked the lack of instructions on how to design teh pcb. I felt like both learning how to do it and doing it at the same time led to a very tight schedule. I had the impression that this course is not for learning but for doing something that is already learned, which is a shame.
