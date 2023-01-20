@@ -100,7 +100,26 @@ The TAs are very demanding, so you should be very flexible with your solutions, 
 tiny attention mistakes in either your code, your CAD and electronics. Some details might seem like a pain, but most of the time
 it's all about best practices for later work in the industry I guess.
 
-*Malcom:*
+*Malcom:* +
+
+*my work* +
+I did the programming part. The entire game logic of the robot. +
+
+*What I learned* +
+I learned about robot motion and vision. To code as best as possible the motion of an omnimotion robot. I learned about connecting to server using websocket. I learned that the way we structure the code from the beginning is really important for development. +
+
+*Improvement for next time* +
+I would first improve the way I structured the code at the beginning to not change it during the semester and to have it easy to understand. I would as well improve a lot the logic of the robot. Adding the logic to keep the robot in the field, to not collide with the opponent robot or with baskets. I would improve the color detection to get better overall accuracy. +
+
+*What did you like/did not like about the course/building a robot?* +
+I like the code given at the beginning that helps a lot to start the code. The boot camp was useful as well but if people already have a team, it is better to start working together from the boot camp. I didn't like all the constraints about the code. Sometimes we didn't know about a rule of coding and then finally we have to change a lot of the code to fit with it. +
+
+
+*Suggestions for next year's students.* +
+Check the deadline every week to be sure you are not late because no one will remind you about it. Work consistently all along even if you are ahead of time in the beginning. Submit all the tasks as soon as possible because you will have a lot of changes for each review. +
+
+*Suggestions for instructors.* +
+The point system may be improved. By making third place in the competition we all have bad grades. Be more flexible on the tasks and be consistent with the reviews.
 
 *Léon:*
 
