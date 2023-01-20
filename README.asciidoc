@@ -1,7 +1,20 @@
+== Team presentation
+*Gautier Reynes:* in charge of Mechanics and Programming, support for Electronics. +
+*Malcom  Radigon:* in charge of Programming. +
+*Léon Glorieux:* in charge of Mechanics. +
+*Nathan Mison:* in charge of Electronics. +
+
 == Fusion 360 assembly link
 
 https://a360.co/3Thbv4A +
 
+== Programming
+
+== Mechanics
+
+== Electronics
+
+== Personnal comments
 
 == Blog
 
