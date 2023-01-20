@@ -55,6 +55,7 @@ The final electronics are the test electronics. The two servos on the thrower ar
 The PCB was not finished in time, but even so there was nothing to connect the two servos on the thrower, so adding the connections would have been better. We also noticed that having a larger robot makes fitting the test electronics in it much easier. With the test robot we really struggled as it was very small, but our new robot it was much smoother. +
 
 As can be seen on this picture, thanks to spacious design of the robot, there is ample room for all the components and the cable management is clean. This is also helped thanks to connectors of the battery being embedded in the design and not dangling everywhere. +
+
 image::cabling.jpg[]
 
 
