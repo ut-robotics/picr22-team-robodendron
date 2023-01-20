@@ -57,12 +57,6 @@ The PCB was not finished in time, but even so there was nothing to connect the t
 As can be seen on this picture, thanks to spacious design of the robot, there is ample room for all the components and the cable management is clean. This is also helped thanks to connectors of the battery being embedded in the design and not dangling everywhere. +
 image::cabling.jpg[]
 
-I worked on the electronics, I therefore mostly learned how to design a pcb. Unfortunately, most of the mistakes chere either out of my control, like the test robot being to small or the mainboard shortcircuiting for no apparent reason. But since I now know how to design a pcb if I were to do the same thing again it would probably work.
-I liked being able to work manually on the robot. I however disliked the lack of instructions on how to design teh pcb. I felt like both learning how to do it and doing it at the same time led to a very tight schedule. I had the impression that this course is not for learning but for doing something that is already learned, which is a shame.
-For next year students I definetly advise to choose the largest robot at the beginning of the year as it leads to a much easier time fixing the test electronics. I would also recommend them to design their own robot with the test electronics in mind, so that no team the year after suffers from haing unfixable test electronics to the robot.
-And for the instructors I would like more documentation on altium and how to design the pcb for this application, I think this would both accelerate the progression curve of people learning how to design pcbs. It would also probably lower the workload on the instructors as a part of the solicitation would be solved by the sudents themselves.
-I also think that the fixed points awarded for each task does not adequatly reflect the workload. For example attaching the test electronics gives the same amount to everyone, but a team starting with a large robot and clean electronics has a much easier time doing this that one starting with a small robot and cabling that has to be done over again. +
-
 
 == Personal comments
 
@@ -82,7 +76,11 @@ it's all about best practices for later work in the industry I guess.
 
 *Léon:*
 
-*Nathan:*
+*Nathan:* I worked on the electronics, I therefore mostly learned how to design a pcb. Unfortunately, most of the mistakes chere either out of my control, like the test robot being to small or the mainboard shortcircuiting for no apparent reason. But since I now know how to design a pcb if I were to do the same thing again it would probably work.
+I liked being able to work manually on the robot. I however disliked the lack of instructions on how to design teh pcb. I felt like both learning how to do it and doing it at the same time led to a very tight schedule. I had the impression that this course is not for learning but for doing something that is already learned, which is a shame.
+For next year students I definetly advise to choose the largest robot at the beginning of the year as it leads to a much easier time fixing the test electronics. I would also recommend them to design their own robot with the test electronics in mind, so that no team the year after suffers from haing unfixable test electronics to the robot.
+And for the instructors I would like more documentation on altium and how to design the pcb for this application, I think this would both accelerate the progression curve of people learning how to design pcbs. It would also probably lower the workload on the instructors as a part of the solicitation would be solved by the sudents themselves.
+I also think that the fixed points awarded for each task does not adequatly reflect the workload. For example attaching the test electronics gives the same amount to everyone, but a team starting with a large robot and clean electronics has a much easier time doing this that one starting with a small robot and cabling that has to be done over again. +
 
 == Blog
 
