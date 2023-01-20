@@ -10,12 +10,65 @@ https://a360.co/3Thbv4A +
 
 == Programming
 
+*External libraries*+
+
+numpy - Calculation and data processing+
+math - Trigonometric functions+
+enum - State of the robot+
+pyserial - Serial communication+
+websocket - Connect to the server of referee referee command+
+json - access the data of referee command+
+threading - Create thread for each action of the robot+
+sys - Control thread+
+pickle - Store the color configuration+
+cv2 - image processing+
+input/get_gamepad - communication with the gamepad controller+
+pyrealsense2 - Realsense camera+
+
+*Game logic*+
+
+The robot starts when the referee sends the command with the target basket. It will rotate until it sees a ball. 
+If it sees a ball, it drives towards it until it is close enough. Once it is close enough, it orbits around the ball until it is aligned with the ball and the target basket. 
+It estimates the distance with the basket and engages the thrower motor accordingly. It goes forward to throw the ball. Then it starts again to search a ball by rotating.
+If at any moment , the ball is lost then it rotates again to find a new one.+
+
+*Code structure*+
+
+image::code_diagram.png[]
+
+*Code review*+
+
+The logic of the movement of the robots was good since the robot was moving with smooth trajectory towards the ball and the alignment with the baskets were smooth as well. The main improvement is in the machine vison part. The color detection and the depth estimation could be improved to get a better accuracy when aligning the ball and the basket so we can score more often. The robot got issues as well to detect the balls on the field when they were too far from the robot. This can as well be improved by adjusting the OpenCV part. The robot didn't have the logic to ignore the balls when they are outside of the field or to avoid the collision with the baskets. This cause a lot of penalty during competition, and this is something important to implement. This can be done as well by developing more the machine vision part. The logic to search the ball can be improve by making straight trajectory between the opponent basket the team basket. This would allow to find all the balls on the filed even if the last ball remaining is at the opposite side.
+
 == Mechanics
+
+Here's a picture of our robot in its final state, with all the parts fully assembled. It's quite big as we had to play with
+the test robot electronics. In a way, it's more practical since we have room to fit all the cables... We struggled with the
+more compact test robot we had, so we figured we'd go big for our own. 
+
 image::robot.jpg["The robot"]
 
 == Electronics
 
-== Personnal comments
+== Personal comments
+
+*Gautier:* I personally worked on the robot's chassis (base chassis, camera mounts, anything that holds
+the robot's parts together...), as well as some of the software (gamepad control, vision logic... I gave Malcom
+some support with depth sensing for the robot's aim at the hoops...).
+This project requires good skills in any topic of mechatronics, and depending on how you manage your team,
+and depending on how much your teammates want to be involved, it can go south pretty easily. Deadlines aren't short
+you get the sufficient amount of time to get things done, but falling in the trap of wasting crucial time on useless things
+is so easy...
+
+The TAs are very demanding, so you should be very flexible with your solutions, and anticipate all
+tiny attention mistakes in either your code, your CAD and electronics. Some details might seem like a pain, but most of the time
+it's all about best practices for later work in the industry I guess.
+
+*Malcom:*
+
+*Léon:*
+
+*Nathan:*
 
 == Blog
 
