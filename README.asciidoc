@@ -32,9 +32,21 @@ If it sees a ball, it drives towards it until it is close enough. Once it is clo
 It estimates the distance with the basket and engages the thrower motor accordingly. It goes forward to throw the ball. Then it starts again to search a ball by rotating.
 If at any moment , the ball is lost then it rotates again to find a new one. +
 
-*Code structure* +
+This block diagram sums up the game logic: +
 
 image::code_diagram.png[]
+
+*Code structure* +
+
+Here we'll briefly describe the code structure, since the game logic is established.+
+
+The backbone of the code is the script *follow_ball_depth.py*. This is the "main" script that should be executed for the robot to move and play basketball. From this, an object from the OmniMotionRobot class contained in the *motion.py* script
+is initiated. This object will be used to tackle the robots movement thanks to several methods associated with omnimotion movements. The *controller.py* script overwrites the instance of the omnimotion object and is used to control the robot
+manually with a gamepad. The robot is able to see the balls and hoops thanks to a depth sensing camera, the camera is tackled by the *camera.py* script. Again, we create an object of camera which allows to grab camera frames which we use to detect balls and hoops.
+But to extract the balls and hoops, we need some processing from the camera frames, the robot is not magically able to tell what is a ball, and what isn't. That's where the *image_processor.py* comes into play. We process the images
+so that we can trace contours around balls, detecting the pixels with the right color. The vertices of the center of the balls is extracted so we know how to move the robot to go grab them. The same principle applies for the hoops, but we also take
+the depth into account, since we want to determine the distance between the robot and the hoop, so that the throw is at the right speed to score. The color sensibility is taken care of with the *config_colors.py* script. Calibrating the detection for green, blue and magenta
+helps at making the robot more accurate. Finally, the robot is not able to do anything unless it's told to, thanks to the referee commands, which are dealt with by the *referee_command.py* script.+
 
 *Code review* +
 
