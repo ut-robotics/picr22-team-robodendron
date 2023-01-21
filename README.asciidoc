@@ -1,0 +1,22 @@
+== How to setup and run the code
+
+It is fairly easy to get the code working on the robot. But there are a few requirements.+
+
+The Python script called *follow_ball_depth.py* is the main script that should be executed.
+To do that, type the command 'python3.9 follow_ball_depth.py' in your terminal (from the robot's
+computer obviously). +
+
+This code relies on referee commands, since we need them to set the hoop color and name of the robots
+that should compete on the field. The robot continuously listens for referee commands and only when
+its name is set by the referee, it will start playing with the attributed hoop color. +
+
+To receive the referee commands, the referee IP address should be set in the script called *referee_command.py*
+at the following line: 'self.ws.connect("ws://XXX.XXX.XXX.XXX:XXXX").+
+
+If you start the script, after giving the right referee IP, you should be able to monitor referee commands in your terminal, 
+and the robot should start playing when its name is entered by the referee, and the start command is triggered.
+
+== Extras
+
+If you feel like exploring the codes, the "software" folder in which the scripts are stored also contains a README.md file that was given
+during the project's bootcamp. It breaks down the basic script we based our work upon. Make sure to read it :)
