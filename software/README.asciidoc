@@ -1,4 +1,12 @@
-== How to setup and run the code
+== HOW TO SETUP AND RUN THE CODE
+
+== Setup
+
+For the code to work, you need to install all the requirements and packages.+
+
+Open a terminal in the same directory as the *requirements.txt* file and the rest of the scripts, and run the command "pip install -r requirements.txt"+
+
+== Run the code
 
 It is fairly easy to get the code working on the robot. But there are a few requirements.+
 
@@ -18,5 +26,5 @@ and the robot should start playing when its name is entered by the referee, and 
 
 == Extras
 
-If you feel like exploring the codes, the "software" folder in which the scripts are stored also contains a README.md file that was given
+If you feel like exploring the codes, the "software" folder in which the scripts are stored also contains a *module_infos.md* file that was given
 during the project's bootcamp. It breaks down the basic script we based our work upon. Make sure to read it :)
