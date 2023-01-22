@@ -7,7 +7,7 @@ For the code to work, you need to install all the requirements and packages. +
 Open a terminal in the same directory as the *requirements.txt* file and the rest of the scripts, and run the command "pip install -r requirements.txt". +
 
 A module called Segment is also required, and was given at the bootcamp. To get it, create a separate folder, and clone the following repository into it, using git as follows:
-"git clone https://github.com/ut-robotics/picr22-boot-camp-programming.git"+
+"git clone https://github.com/ut-robotics/picr22-boot-camp-programming.git" +
 
 You should find the segment_module folder along Python scripts similar to the ones contained in our repo. Drag and drop the segment_module folder into the folder where our
 scripts are stored. Although they have the same name in our repo, we modified most of the scripts that were given during the bootcamp (image_processor.py etc). +
