@@ -2,9 +2,9 @@
 
 == Setup
 
-For the code to work, you need to install all the requirements and packages.+
+For the code to work, you need to install all the requirements and packages. +
 
-Open a terminal in the same directory as the *requirements.txt* file and the rest of the scripts, and run the command "pip install -r requirements.txt"+
+Open a terminal in the same directory as the *requirements.txt* file and the rest of the scripts, and run the command "pip install -r requirements.txt". +
 
 == Run the code
 
