@@ -4,28 +4,42 @@
 
 For the code to work, you need to install all the requirements and packages. +
 
-Open a terminal in the same directory as the *requirements.txt* file and the rest of the scripts, and run the command "pip install -r requirements.txt". +
+Open a terminal in the same directory as the *requirements.txt* file and the rest of the scripts, and run the command: +
 
-A module called Segment is also required, and was given at the bootcamp. To get it, create a separate folder, and clone the following repository into it, using git as follows:
-"git clone https://github.com/ut-robotics/picr22-boot-camp-programming.git" +
+```
+pip install -r requirements.txt
+``` 
 
-You should find the segment_module folder along Python scripts similar to the ones contained in our repo. Drag and drop the segment_module folder into the folder where our
-scripts are stored. Although they have the same name in our repo, we modified most of the scripts that were given during the bootcamp (image_processor.py etc). +
+A module called Segment is also required, and was given at the bootcamp. To get it, create a separate folder, and clone the following repository into it, and install the package with the commands: +
+
+```
+git clone https://github.com/ut-robotics/picr22-boot-camp-programming.git
+cd segment_module
+pip install .
+```
+
+The module should be correctly installed on your machine.
 
 == Run the code
 
 It is fairly easy to get the code working on the robot. But there are a few requirements.+
 
 The Python script called *follow_ball_depth.py* is the main script that should be executed.
-To do that, type the command 'python3.9 follow_ball_depth.py' in your terminal (from the robot's
-computer obviously). +
+To do that, type the following command in your terminal (from the robot's computer obviously): +
+
+```
+python3.9 follow_ball_depth.py
+```
 
 This code relies on referee commands, since we need them to set the hoop color and name of the robots
 that should compete on the field. The robot continuously listens for referee commands and only when
 its name is set by the referee, it will start playing with the attributed hoop color. +
 
 To receive the referee commands, the referee IP address should be set in the script called *referee_command.py*
-at the following line: 'self.ws.connect("ws://XXX.XXX.XXX.XXX:XXXX").+
+at the following line:
+```
+self.ws.connect("ws://XXX.XXX.XXX.XXX:XXXX")
+``` 
 
 If you start the script, after giving the right referee IP, you should be able to monitor referee commands in your terminal, 
 and the robot should start playing when its name is entered by the referee, and the start command is triggered.
