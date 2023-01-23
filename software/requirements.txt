@@ -1,0 +1,7 @@
+inputs==0.5
+numpy==1.21.3
+opencv_python==4.6.0.66
+pandas==1.5.3
+pyrealsense2==2.53.1.4623
+pyserial==3.5
+websocket_client==1.4.2
